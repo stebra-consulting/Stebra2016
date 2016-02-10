@@ -142,6 +142,8 @@
     <Content Include="packages.config" />
     <Content Include="Default.cshtml" />
     <Content Include="Scripts\jquery-2.2.0.min.map" />
+    <None Include="Properties\PublishProfiles\StebraStage - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\StebraStage - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -195,7 +197,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AzureManager.cs" />
-    <Compile Include="Keys.cs" />
     <Compile Include="Mail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StebraEntity.cs" />
