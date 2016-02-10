@@ -1,0 +1,108 @@
+﻿body {
+    padding-top: 50px;
+    background-image: url('../Images/Background/stebra_bg.jpg');
+    background-size:cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+#navImg {
+    height:35px;
+    margin-top:-8px;
+}
+
+.fill {
+    width: 100%;
+    min-height: 400px !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.myLiPadding {
+    padding-left:15px;
+}
+
+.myBottom {
+    position:absolute;
+    bottom:0;
+}
+
+.panel-primary {
+    border:none;
+}
+
+.panel-primary > .panel-heading {
+    background-color: #900000 ;
+    border-color:#900000  !important;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+        color: #FFFFFF !important;
+}
+
+.news img {
+    display: inline-block;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+}
+
+.carousel-caption {
+    color:#337ab7 !important;
+}
+
+.header { 
+    height:400px;
+    background: url('../Images/Slider/beach.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0px !important;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.dividers1 {background-color:#FFFFFF;}
+
+.dividers2 {background-color:#f2f2f2;}
+
+input {
+    margin-bottom:18px !important;
+}
+.map {
+    padding-left:0px !important;
+    padding-right:0px !important;
+    padding-bottom:0px !important;
+    overflow: hidden;
+}
+
+.contact-glyphicon {
+    top: 23px !important;
+    right: 23px !important;
+    color: #9A9A9A;
+}
+.person {
+    height:200px;
+}

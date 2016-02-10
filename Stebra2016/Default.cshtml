@@ -1,0 +1,202 @@
+﻿@{
+    Layout = "~/_Layout.cshtml";
+    Page.Title = "Stebra Consulting";
+    List<StebraEntity> sortedEntries = AzureManager.sort();
+
+    var result = Request["contactForm"];
+    var name = Request["name"];
+    var email = Request["email"];
+    var comments = Request["comments"];
+
+    if (result != null)
+    {
+        <div id="isPostBack" value="true">
+            @Mail.Send(name, email, comments);
+        </div>
+
+    }
+}
+
+
+
+<div style="position:absolute;top:50px;">
+    <div id="helper" class="glyphicon glyphicon-cog" style="display:none;font-size:50px;"></div>
+    <div id="colorPicker" style="background-color:white;height:500px;width:200px;border-radius:5px;border-color:black;border:solid;display:none">
+        <p style="font-size:30px" class="text-right x">X</p>
+        <input id="customColor" type="text" name="Custom" value="Hex color">
+        <input id="change" type="button" name="btn" value="Change" />
+        <br /><br />
+        <div class="thisColor" style="background-color:blue">#0014FF</div>
+        <div class="thisColor" style="background-color:white">#FFFFFF</div>
+        <div class="thisColor" style="background-color:green">#009605</div>
+        <div class="thisColor" style="background-color:black">#000000</div>
+    </div>
+</div>
+
+<div class="container-fluid dividers1">
+    <div id="omStebra" class="container">
+
+        <div class="col-lg-6">
+            <h1>Om Stebra</h1>
+            <h3>Alltid lite bättre</h3>
+            <p>Stebra är ett ungt och nyfiket företag som hela tiden hittar nya vägar inom informationshantering. Vi som jobbar på Stebra brinner för det agila arbetsättet och ser retrospektet som vårt främsta verktyg för att kunna leverera vårt motto, "alltid lite bättre".</p>
+            <h3>TEAM Stebra: ett vinnande koncept</h3>
+            <p>Hela stebras team genomsyras av ssamarbete. Alla i teamet är lika viktiga och förståelsen för detta gör att vi kan samarbeta väldigt öppet och flexibelt med högt i tak. Alla vet att då det alltid finns utrymme för förbättring så höjer vi vår kvalitet och kan producera saker som vi kan vara stolta över. Rollerna i teamet överlappar varandra så att vi kan hjälpa varandra, bolla med varandra och samtidigt ha väldigt kul.</p>
+
+        </div>
+        <div class="col-lg-6">
+            <h1>Erbjudande</h1>
+            <h3>Erbjudandet</h3>
+            <p>​​Stebra Conculting levererar Moln- och konsulttjänster för att hjälpa ditt företag med dokumenthantering,  IT och Management. Teamet bakom Stebra har över tio års erfarenhet av att utveckla IT-system, kartlägga information och optimera affärsprocesser. Våra kunder är globala storföretag, myndigheter men även mindre småförtag. Vi är välrenommerade och har bland marknadens bästa kompetens inom SharePoint-lösningar och kravhantering.</p>
+        </div>
+    </div>
+    <br />
+</div>
+
+
+
+
+<div class="container-fluid dividers2">
+    <div class="container">
+
+        <div class="col-lg-12">
+            <h2 style="color:black">Säljande bilder</h2>
+        </div>
+
+
+        <div class="col-sm-3"><img src="~/Images/ToBeReplaced.png" /><p>Säljande text</p> </div>
+        <div class="col-sm-3"><img src="~/Images/ToBeReplaced.png" /><p>Säljande text</p> </div>
+        <div class="col-sm-3"><img src="~/Images/ToBeReplaced.png" /><p>Säljande text</p> </div>
+        <div class="col-sm-3"><img src="~/Images/ToBeReplaced.png" /><p>Säljande text</p> </div>
+
+        <br><br><br>
+    </div><br />
+</div>
+
+
+<div class="container-fluid dividers1">
+    <div id="nyheter" class="container">
+        <!-- 1st single news -->
+        <div class="col-lg-12">
+            <br />
+            <h2 style="color:black">Senaste nytt</h2>
+        </div>
+        <div class="col-lg-6 news">
+            <img src="@sortedEntries[0].Image" alt="firstImage" />
+        </div>
+        <div class="col-lg-6">
+            <h3 style="color:black">@sortedEntries[0].Title</h3>
+            <p>
+                @Html.Raw(@sortedEntries[0].Body)
+            </p>
+            <a href="http://newsflashon.azurewebsites.net/Home/Nyheter/look-at-this-splendid-office">Link to Article (hårdkodad)</a>
+            <p><i>@Html.Raw(@sortedEntries[0].Date) @Html.Raw(@sortedEntries[0].Article)</i></p>
+        </div>
+        <br />
+    </div>
+</div>
+
+
+<div class="container-fluid dividers2">
+    <div id="vilka" class="container">
+        <section>
+            <div class="col-lg-12">
+                <br />
+                <h2 style="color:black">Vilka vi är?</h2>
+            </div>
+            <br><br><br>
+
+            <div class="col-lg-6" style="margin-bottom:30px">
+                <div class="col-lg-12 text-center"><img src="~/Images/Persons/Hans.jpg" class="img-circle person" /></div>
+                <div class="col-lg-12">
+                    <h3>Hans, REQB-certified SCRUM master</h3>
+                    <h4>Roll i teamet: Projektledare, Scrum master, kravanalytiker</h4>
+                    <p>Hans Steffensson som är en av grundarna till stebra har ett decenium av erfarenhet inom IT och vet vilka processer och verktyg som bör användas.</p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6" style="margin-bottom:30px">
+                <div class="col-lg-12 text-center"><img src="~/Images/Persons/Bertil.jpg" class="img-circle person" /></div>
+                <div class="col-lg-12">
+                    <h3>Bertil, SharePoint, Office365 specialist</h3>
+                    <h4>Roll i teamet: Arkitekt, Produktägare, informationskartläggare</h4>
+                    <p>Bertil Brandt som också är en av grundarna på stebra har jobbat 16 år inom IT. Bertil är också förälskad i det agila arbetssättet, verktygen, metodiken i Scrum. </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6" style="margin-bottom:30px">
+                <div class="col-lg-12 text-center"><img src="~/Images/Persons/Felix.jpg" class="img-circle person" /></div>
+                <div class="col-lg-12">
+                    <h3>Felix, SharePoint, Office365 Designer </h3>
+                    <h4>Roll i teamet: Designer, Utvecklare frontend</h4>
+                    <p>Felix besitter dubbel kompetens, både som fullfjädrad Industridesigner men också ett gediget utvecklarintresse som tagit honom från IOS utveckling, och appar som "Falling Monk". Nu bygger han SharePoint appar.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6" style="margin-bottom:30px">
+                <div class="col-lg-12 text-center"><img src="~/Images/Persons/Simon.jpg" class="img-circle person" /></div>
+                <div class="col-lg-12">
+                    <h3>Simon, SharePoint, Office365 Developer </h3>
+                    <h4>Roll i teamet: Utvecklare​ och KodMentor</h4>
+                    <p>Simon en av de bättre systemutvecklarna du någonsin kommer träffa på, har extremt lätt att ta till sig nya teknologier, och delar gärna med sig av sina erfarenheter. </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6" style="margin-bottom:30px">
+                <div class="col-lg-12 text-center"><img src="~/Images/Persons/Matilda.jpg" class="img-circle person" /></div>
+                <div class="col-lg-12">
+                    <h3>Matilda, Agil Coach, SCRUM master  </h3>
+                    <h4>Roll i teamet: Projektledare, Scrum master, koordinator</h4>
+                    <p>Matilda Riting har över sju års erfarenhet av ledarskap och personlig coachning. Matilda är nyfiken som person och frågar hellre en gång för mycket än en gång för lite då hon hävdar att ovisshet hämmar kreativitet. </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6" style="margin-bottom:30px">
+                <div class="col-lg-12 text-center"><img src="~/Images/Persons/Alvaro.jpg" class="img-circle person" /></div>
+                <div class="col-lg-12">
+                    <h3>Alvaro, System arkitekt, .NET Developer </h3>
+                    <h4>Roll i teamet: Arkitekt och Utvecklare</h4>
+                    <p>Alvaro Urbano, Gittarn med en online.poker-platform i ryggen, är en väldigt skicklig utvecklare och problemlösare.Han är alltid up-to-date med allt som händer i .NET-världen. </p>
+                </div>
+            </div>
+
+        </section>
+
+        <br><br><br>
+    </div>
+</div>
+<div class="container-fluid dividers1 map">
+    <div id="kontakta" class="container bg-grey text-center">
+        <h2>Kontaka oss</h2>
+        <br><br><br>
+
+        <div class="row">
+            <div class="col-lg-6 col-lg-push-3 col-sm-9 col-xs-12 form-group">
+
+                <form action="~/Default.cshtml" href="#kontakta">
+                    <span class="glyphicon glyphicon-user pull-left contact-glyphicon"></span>
+                    <input class="form-control" id="name" name="name" placeholder="Namn" type="text" required="">
+
+
+
+                    <span class="glyphicon glyphicon-envelope pull-left contact-glyphicon"></span>
+                    <input class="form-control" id="email" name="email" placeholder="Email / Mobil" type="email" required="">
+
+                    <span class="glyphicon glyphicon-comment pull-left contact-glyphicon"></span>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Meddelande" rows="8"></textarea><br>
+
+                    <button id="submitMyMessage" class="btn btn-default pull-right" type="submit" name="contactForm" value="xx">Skicka till info@stebra.se</button>
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.9054494512975!2d18.046823816071818!3d59.317835781654864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77dd51d988d1%3A0x4b91595450bc055c!2sBr%C3%A4nnkyrkagatan+95%2C+117+26+Stockholm%2C+Sverige!5e0!3m2!1ssv!2sus!4v1453905991953" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
