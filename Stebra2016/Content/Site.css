@@ -126,7 +126,7 @@ nav.shrink #navImg {
 }
 
 .dividers2 {
-    background-color: #f2f2f2;
+      background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);
 }
 
 input {
