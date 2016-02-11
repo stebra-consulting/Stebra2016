@@ -19,17 +19,27 @@
 
 @* sss newtring added comment more string *@
 
-<div style="position:absolute;top:50px;">
+<div style="position:absolute;top:70px;">
     <div id="helper" class="glyphicon glyphicon-cog" style="display:none;font-size:50px;"></div>
     <div id="colorPicker" style="background-color:white;height:500px;width:200px;border-radius:5px;border-color:black;border:solid;display:none">
-        <p style="font-size:30px" class="text-right x">X</p>
+        <div style="height: 50px;position: relative;">
+            <div class="chooseDivider" style="font-size:30px;border-radius:5px;border:solid;width:25px;position:absolute;top:0px;left:0px;">1</div>
+            <div class="chooseDivider" style="font-size:30px;border-radius:5px;border:solid;width:25px;position:absolute;top:0px;left:50%;margin-left:-10px;">2</div>
+            <div class="x" style="font-size:30px;border-radius:5px;border:solid;width:25px;position:absolute;top:0px;right:0px;">X</div>
+        </div>
         <input id="customColor" type="text" name="Custom" value="Hex color">
         <input id="change" type="button" name="btn" value="Change" />
-        <br /><br />
+        <br />
         <div class="thisColor" style="background-color:blue">#0014FF</div>
         <div class="thisColor" style="background-color:white">#FFFFFF</div>
         <div class="thisColor" style="background-color:green">#009605</div>
         <div class="thisColor" style="background-color:black">#000000</div>
+        <div class="thisColor" style="background-color:grey">#A59D9D</div>
+        <div class="thisColor" style="background-color:red">#EA0000</div>
+        <div class="thisColor" style="background-color:teal">#72C3B1</div>
+        <div class="thisColor" style="background-color:purple">#FB1AC0</div>
+
+
     </div>
 </div>
 
@@ -63,11 +73,29 @@
             <h2 style="color:black">Säljande bilder</h2>
         </div>
 
-
-        <div class="col-sm-3"><img src="~/Images/ToBeReplaced.png" /><p>Säljande text</p> </div>
-        <div class="col-sm-3"><img src="~/Images/ToBeReplaced.png" /><p>Säljande text</p> </div>
-        <div class="col-sm-3"><img src="~/Images/ToBeReplaced.png" /><p>Säljande text</p> </div>
-        <div class="col-sm-3"><img src="~/Images/ToBeReplaced.png" /><p>Säljande text</p> </div>
+    <div class="col-lg-3 text-center">
+        <img class="img-circle sellText" src="~/Images/SäljandeTexter/Förstudie.png" />
+        <h2>Förstudie</h2>
+        <p>Fluffiga önskemål utan konkreta planer? Vi hjälper er att slå huvudet på spiken och sätta rimliga mål. Med hjälp av workshops och en nära kund-dialog samlar vi in, analyserar, specificerar och prioriterar de krav och förbättringsåtgärder just ert företag behöver för att starta ert projekt med den bästa förutsättningen till framgång.</p> 
+    </div>
+        
+    <div class="col-lg-3 text-center">
+        <img class="img-circle sellText" src="~/Images/SäljandeTexter/Projekt.png" />
+        <h2>Projekt</h2>
+        <p>Sitter ni i klistret eller har ni fått tuggummi under fötterna? Lugn, vi fixart. Oavsett om ni redan har ett färdigt lösningsförslag till ert IT-projekt, behöver extra resurser till ett pågående projekt, eller vill starta upp ett helt nytt projekt från ruta ett så hjälper vi er i mål. Vi tar er från ax till limpa vidare till smörgåsbordet och har alltid ett helhetstänk i fokus.</p> 
+    </div>
+        
+    <div class="col-lg-3 text-center">
+        <img class="img-circle sellText" src="~/Images/SäljandeTexter/Förvaltning.png" />
+        <h2>Förvaltning</h2>
+        <p>Kommer ni på roligare saker att göra än att ta hand om ert IT-system? Då tycker vi att ni ska fokusera på det istället och låta oss ta hand om tekniken. Ett förvaltningsuppdrag av oss kan  innebära att vi kontinuerligt sköter uppdateringen och vidareutvecklingen av era system.</p> 
+    </div>
+        
+    <div class="col-lg-3 text-center">
+        <img class="img-circle sellText" src="~/Images/SäljandeTexter/Närvaro.png" />
+        <h2>Social närvaro</h2>
+        <p>Dags/(På tiden) att utveckla er sociala kompetens? Vi hjälper er att förbättra både era interna och externa kommunikationsvägar så att er information hamnar på rätt ställe. Vi kan tillexempel hjälpa er att på ett mer effektivt sätt dela information på era interna plattformar, eller att nå ut till era sociala medier med bara ett klick.</p> 
+    </div>
 
         <br><br><br>
     </div><br />
@@ -108,7 +136,7 @@
 
             <div class="col-lg-6" style="margin-bottom:30px">
                 <div class="col-lg-12 text-center"><img src="~/Images/Persons/Hans.jpg" class="img-circle person" /></div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
                     <h3>Hans, REQB-certified SCRUM master</h3>
                     <h4>Roll i teamet: Projektledare, Scrum master, kravanalytiker</h4>
                     <p>Hans Steffensson som är en av grundarna till stebra har ett decenium av erfarenhet inom IT och vet vilka processer och verktyg som bör användas.</p>
@@ -118,7 +146,7 @@
 
             <div class="col-lg-6" style="margin-bottom:30px">
                 <div class="col-lg-12 text-center"><img src="~/Images/Persons/Bertil.jpg" class="img-circle person" /></div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
                     <h3>Bertil, SharePoint, Office365 specialist</h3>
                     <h4>Roll i teamet: Arkitekt, Produktägare, informationskartläggare</h4>
                     <p>Bertil Brandt som också är en av grundarna på stebra har jobbat 16 år inom IT. Bertil är också förälskad i det agila arbetssättet, verktygen, metodiken i Scrum. </p>
@@ -127,7 +155,7 @@
 
             <div class="col-lg-6" style="margin-bottom:30px">
                 <div class="col-lg-12 text-center"><img src="~/Images/Persons/Felix.jpg" class="img-circle person" /></div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
                     <h3>Felix, SharePoint, Office365 Designer </h3>
                     <h4>Roll i teamet: Designer, Utvecklare frontend</h4>
                     <p>Felix besitter dubbel kompetens, både som fullfjädrad Industridesigner men också ett gediget utvecklarintresse som tagit honom från IOS utveckling, och appar som "Falling Monk". Nu bygger han SharePoint appar.</p>
@@ -136,7 +164,7 @@
 
             <div class="col-lg-6" style="margin-bottom:30px">
                 <div class="col-lg-12 text-center"><img src="~/Images/Persons/Simon.jpg" class="img-circle person" /></div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
                     <h3>Simon, SharePoint, Office365 Developer </h3>
                     <h4>Roll i teamet: Utvecklare​ och KodMentor</h4>
                     <p>Simon en av de bättre systemutvecklarna du någonsin kommer träffa på, har extremt lätt att ta till sig nya teknologier, och delar gärna med sig av sina erfarenheter. </p>
@@ -145,7 +173,7 @@
 
             <div class="col-lg-6" style="margin-bottom:30px">
                 <div class="col-lg-12 text-center"><img src="~/Images/Persons/Matilda.jpg" class="img-circle person" /></div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
                     <h3>Matilda, Agil Coach, SCRUM master  </h3>
                     <h4>Roll i teamet: Projektledare, Scrum master, koordinator</h4>
                     <p>Matilda Riting har över sju års erfarenhet av ledarskap och personlig coachning. Matilda är nyfiken som person och frågar hellre en gång för mycket än en gång för lite då hon hävdar att ovisshet hämmar kreativitet. </p>
@@ -154,7 +182,7 @@
 
             <div class="col-lg-6" style="margin-bottom:30px">
                 <div class="col-lg-12 text-center"><img src="~/Images/Persons/Alvaro.jpg" class="img-circle person" /></div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
                     <h3>Alvaro, System arkitekt, .NET Developer </h3>
                     <h4>Roll i teamet: Arkitekt och Utvecklare</h4>
                     <p>Alvaro Urbano, Gittarn med en online.poker-platform i ryggen, är en väldigt skicklig utvecklare och problemlösare.Han är alltid up-to-date med allt som händer i .NET-världen. </p>
@@ -198,5 +226,7 @@
 </div>
 
 
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.9054494512975!2d18.046823816071818!3d59.317835781654864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77dd51d988d1%3A0x4b91595450bc055c!2sBr%C3%A4nnkyrkagatan+95%2C+117+26+Stockholm%2C+Sverige!5e0!3m2!1ssv!2sus!4v1453905991953" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div>
+    <div class="overlay" onClick="style.pointerEvents='none'"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.9054494512975!2d18.046823816071818!3d59.317835781654864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77dd51d988d1%3A0x4b91595450bc055c!2sBr%C3%A4nnkyrkagatan+95%2C+117+26+Stockholm%2C+Sverige!5e0!3m2!1ssv!2sus!4v1453905991953" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>

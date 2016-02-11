@@ -26,15 +26,24 @@
 
             $("#colorPicker").hide();
         }
-       
+
 
     });
+
+    var colorThis;
+    $(".chooseDivider").click(function () {
+        colorThis = $(this).text();
+        
+    });
+
     $(".thisColor").click(function () {
-        $(".dividers1").css("background-color", $(this).text());
+        var fullName = ".dividers" + colorThis;
+        $(fullName).css("background-color", $(this).text());
     });
 
     $("#change").click(function () {
-        $(".dividers1").css("background-color", $("#customColor").val());
+        var fullName = ".dividers" + colorThis;
+        $(fullName).css("background-color", $("#customColor").val());
     });
 
 
@@ -80,4 +89,19 @@
 
     ga('create', 'UA-73305552-1', 'auto');
     ga('send', 'pageview');
+
+
+
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 400) {
+            $('nav').addClass('shrink');
+            $("#navImg").attr("src", "/Images/Logo/stebra_logo_white_notagline.png");
+
+        } else {
+            $('nav').removeClass('shrink');
+            $("#navImg").attr("src", "/Images/Logo/stebra_logo_white.png");//stor med slogan
+        }
+    });
+
+
 });

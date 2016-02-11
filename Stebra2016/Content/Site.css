@@ -1,7 +1,5 @@
 ﻿body {
     padding-top: 50px;
-    background-image: url('../Images/Background/stebra_bg.jpg');
-    background-size:cover;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -14,10 +12,49 @@
     white-space: normal;
 }
 
-#navImg {
-    height:35px;
-    margin-top:-8px;
+
+nav a {
+    padding-top: 23px !important;
+    padding-bottom: 23px !important;
+    font-size: 18px;
 }
+
+nav .navbar-toggle {
+    margin: 13px 15px 13px 0;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+
+#navImg {
+    height: 55px;
+    margin-top: -20px;
+}
+
+
+
+nav.shrink a {
+     padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 25px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+nav.shrink #navImg {
+    height: 35px;
+    margin-top: -8px;
+}
+
 
 .fill {
     width: 100%;
@@ -27,28 +64,29 @@
 }
 
 .myLiPadding {
-    padding-left:15px;
+    padding-left: 15px;
 }
 
 .myBottom {
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
 }
 
 .panel-primary {
-    border:none;
+    border: none;
 }
 
-.panel-primary > .panel-heading {
-    background-color: #900000 ;
-    border-color:#900000  !important;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-top-left-radius: 0px !important;
-    border-top-right-radius: 0px !important;
-}
+    .panel-primary > .panel-heading {
+        background-color: #900000;
+        border-color: #900000 !important;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+    }
+
 .navbar-inverse .navbar-nav > li > a {
-        color: #FFFFFF !important;
+    color: #FFFFFF !important;
 }
 
 .news img {
@@ -63,16 +101,15 @@
     border-radius: 4px;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-
 }
 
 .carousel-caption {
-    color:#337ab7 !important;
+    color: #337ab7 !important;
 }
 
-.header { 
-    height:400px;
-    background: url('../Images/Slider/beach.jpg') no-repeat center center; 
+.header {
+    height: 400px;
+    background: url('../Images/Slider/beach.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -84,17 +121,22 @@
     padding: 60px 50px;
 }
 
-.dividers1 {background-color:#FFFFFF;}
+.dividers1 {
+    background-color: #FFFFFF;
+}
 
-.dividers2 {background-color:#f2f2f2;}
+.dividers2 {
+    background-color: #f2f2f2;
+}
 
 input {
-    margin-bottom:18px !important;
+    margin-bottom: 18px !important;
 }
+
 .map {
-    padding-left:0px !important;
-    padding-right:0px !important;
-    padding-bottom:0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
     overflow: hidden;
 }
 
@@ -103,6 +145,20 @@ input {
     right: 23px !important;
     color: #9A9A9A;
 }
+
 .person {
-    height:200px;
+    height: 200px;
+}
+.sellText {
+    height: 200px;
+    width:200px;
+}
+
+.overlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:500px; /* your iframe height */
+   top:500px;  /* your iframe height */
+   margin-top:-500px;  /* your iframe height */
 }
