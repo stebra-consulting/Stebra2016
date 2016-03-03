@@ -70,31 +70,62 @@
     <div class="container">
 
         <div class="col-lg-12">
-            <h2 style="color:black">Säljande bilder</h2>
+            @*<h2 style="color:black">Säljande bilder</h2>*@
         </div>
+
+        @*<div class="thumbnail col-lg-3 text-center">
+            <img class="img-circle sellText" src="~/Images/SaljandeTexter/prestudy.jpg" alt="prestudy" />
+            <div class="caption post-content">
+
+                <h3>Förstudie</h3>
+
+            </div>
+        </div>*@
 
     <div class="col-lg-3 text-center">
         <img class="img-circle sellText" src="~/Images/SaljandeTexter/prestudy.jpg" />
-        <h2>Förstudie</h2>
-        <p>Fluffiga önskemål utan konkreta planer? Vi hjälper er att slå huvudet på spiken och sätta rimliga mål. Med hjälp av workshops och en nära kund-dialog samlar vi in, analyserar, specificerar och prioriterar de krav och förbättringsåtgärder just ert företag behöver för att starta ert projekt med den bästa förutsättningen till framgång.</p> 
+        <h2 class="caption">Förstudie</h2>
+        <h2>Fluffiga önskemål utan konkreta planer?</h2>
+        <p> 
+            Vi hjälper er att slå huvudet på spiken och sätta rimliga mål.
+            Med hjälp av workshops och en nära kund-dialog samlar vi in, analyserar, 
+            specificerar och prioriterar de krav och förbättringsåtgärder just ert företag 
+            behöver för att starta ert projekt med den bästa förutsättningen till framgång.
+        </p> 
     </div>
         
     <div class="col-lg-3 text-center">
         <img class="img-circle sellText" src="~/Images/SaljandeTexter/Project.png" />
-        <h2>Projekt</h2>
-        <p>Sitter ni i klistret eller har ni fått tuggummi under fötterna? Lugn, vi fixart. Oavsett om ni redan har ett färdigt lösningsförslag till ert IT-projekt, behöver extra resurser till ett pågående projekt, eller vill starta upp ett helt nytt projekt från ruta ett så hjälper vi er i mål. Vi tar er från ax till limpa vidare till smörgåsbordet och har alltid ett helhetstänk i fokus.</p> 
+        <h2 class="caption">Projekt</h2>
+        <h2>Sitter ni i klistret eller har ni fått tuggummi under fötterna?</h2>
+        <p>
+            Lugn, vi fixart!.
+            Oavsett om ni redan har ett färdigt lösningsförslag till ert IT-projekt, 
+            behöver extra resurser till ett pågående projekt, 
+            eller vill starta upp ett helt nytt projekt från ruta ett så hjälper vi er i mål. 
+            Vi tar er från ax till limpa vidare till smörgåsbordet och har alltid ett helhetstänk i fokus.
+        </p> 
     </div>
         
     <div class="col-lg-3 text-center">
         <img class="img-circle sellText" src="~/Images/SaljandeTexter/maintenance.jpg" />
-        <h2>Förvaltning</h2>
-        <p>Kommer ni på roligare saker att göra än att ta hand om ert IT-system? Då tycker vi att ni ska fokusera på det istället och låta oss ta hand om tekniken. Ett förvaltningsuppdrag av oss kan  innebära att vi kontinuerligt sköter uppdateringen och vidareutvecklingen av era system.</p> 
+        <h2 class="caption">Förvaltning</h2>
+        <h2>Kommer ni på roligare saker att göra än att ta hand om ert IT-system?</h2>
+        <p>
+            Då tycker vi att ni ska fokusera på det istället och låta oss ta hand om tekniken. 
+            Ett förvaltningsuppdrag hos oss kan innebära att vi kontinuerligt sköter uppdateringen och vidareutvecklingen av era system.
+        </p> 
     </div>
         
     <div class="col-lg-3 text-center">
         <img class="img-circle sellText" src="~/Images/SaljandeTexter/Presence.png" />
-        <h2>Social närvaro</h2>
-        <p>Dags/(På tiden) att utveckla er sociala kompetens? Vi hjälper er att förbättra både era interna och externa kommunikationsvägar så att er information hamnar på rätt ställe. Vi kan tillexempel hjälpa er att på ett mer effektivt sätt dela information på era interna plattformar, eller att nå ut till era sociala medier med bara ett klick.</p> 
+        <h2 class="caption">Social närvaro</h2>
+        <h2>Dags att utveckla er sociala kompetens?</h2>
+        <p>
+            Vi hjälper er att förbättra både era interna och externa kommunikationsvägar så att er information hamnar på rätt ställe. 
+            Vi kan tillexempel hjälpa er att på ett mer effektivt sätt dela information på era interna plattformar,
+            eller att nå ut till era sociala medier med bara ett klick.
+        </p> 
     </div>
 
         <br><br><br>
@@ -115,11 +146,14 @@
         <div class="col-lg-6">
             <h3 style="color:black">@sortedEntries[0].Title</h3>
             <p>
-                @Html.Raw(@sortedEntries[0].Body)
+              @Html.Raw(sortedEntries[0].Body)
             </p>
-            <a href="http://newsflashon.azurewebsites.net/Home/Nyheter/look-at-this-splendid-office">Link to Article (hårdkodad)</a>
+            <a href="http://newsflashon.azurewebsites.net/">Link to Article</a>
             <p><i>@Html.Raw(@sortedEntries[0].Date) @Html.Raw(@sortedEntries[0].Article)</i></p>
         </div>
+        <br />
+        <br />
+        <br /><br />
         <br />
     </div>
 </div>

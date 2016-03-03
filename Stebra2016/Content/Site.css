@@ -109,7 +109,7 @@ nav.shrink #navImg {
 
 .header {
     height: 400px;
-    background: url('../Images/cloudheader.jpg') no-repeat center center;
+    background: url('../Images/new_header3.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -161,4 +161,16 @@ input {
    height:500px; /* your iframe height */
    top:500px;  /* your iframe height */
    margin-top:-500px;  /* your iframe height */
+}
+
+.caption {
+  position:absolute;
+  left:0;
+  right:0;
+  top:65px;
+  color:white;
+}
+
+.fb-like {
+    top:-5px;
 }

@@ -13,6 +13,19 @@
     <meta name="viewport" content="width=device-width" />
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- FACEBOOK -->
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1734189983463496";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- FACEBOOK -->
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="noselect">
             <div class="container">
@@ -23,10 +36,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+
                     <a class="navbar-brand" href="~/Home/Index">
                         <img id="navImg" src="~/Images/Logo/stebra_logo_white.png" />
                     </a>
                 </div>
+
+
                 <div class="collapse navbar-collapse navbar-right" id="bs-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="#om">Om Stebra</a></li>
@@ -35,6 +51,17 @@
                         <li><a href="#kontakta">Kontakta oss</a></li>
                     </ul>
                 </div>
+
+
+                <!-- LINKEDIN -->
+                <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                <script type="IN/FollowCompany" data-id="5032339">
+                </script>
+
+                <!-- FACEBOOK -->
+                <div class="fb-like" data-href="https://www.facebook.com/stebraconsulting/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+
+
             </div>
         </div>
     </nav>
