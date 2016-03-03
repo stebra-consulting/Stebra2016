@@ -205,3 +205,8 @@ h1, h2, h3 {
  color:#005492 !important;
 }
 .front {color:black !important}
+
+footer * {
+    font-weight: 300 !important;
+    font-size:18px !important;
+}
