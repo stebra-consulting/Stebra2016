@@ -141,10 +141,11 @@ input {
 }
 
 .contact-glyphicon {
-    top: 23px !important;
-    right: 23px !important;
-    color: #9A9A9A;
+    top: -3px !important;
+    left: 5px !important;
+    color: #0072c6;
 }
+
 
 .person {
     height: 200px;
@@ -168,9 +169,39 @@ input {
   left:0;
   right:0;
   top:65px;
-  color:white;
+  color:white !important;
 }
 
 .fb-like {
     top:-5px;
 }
+
+p, b {
+  font-family: 
+    "Segoe UI Semilight","Segoe UI","Segoe",
+    Tahoma,
+    Helvetica,
+    Arial,
+    sans-serif !important;
+  font-size:22px;
+}
+
+h1, h2, h3 {
+  font-family: 
+    "Segoe UI Semilight","Segoe UI","Segoe",
+    Tahoma,
+    Helvetica,
+    Arial,
+    sans-serif !important;
+  font-weight: 300 !important;
+  color:#0072c6 !important;
+}
+
+.displaceFix { /*Prevents persons section from additional rows with single person*/
+      font-size:25px;
+}
+
+.salesTitle { /*make sales <h2> darker for better readability*/
+ color:#005492 !important;
+}
+.front {color:black !important}
