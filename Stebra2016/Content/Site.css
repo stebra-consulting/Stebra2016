@@ -109,7 +109,11 @@ nav.shrink #navImg {
 
 .header {
     height: 400px;
+<<<<<<< HEAD
     background: url('../Images/new_header3.jpg') no-repeat center center;
+=======
+    /*background: url('../Images/Header/clouds_edit.jpg') no-repeat center center;*/
+>>>>>>> mp4 header
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
