@@ -155,6 +155,57 @@ input {
 
 
 
+#startimg #startimginner video {
+    position: relative;
+    left: -50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    bottom: 200px;
+}
+
+#startimg #startimginner .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+#startimg #startimginner {
+    position: relative;
+    right: -50%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+#startimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+
+
 
 
 
