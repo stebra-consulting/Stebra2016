@@ -1,13 +1,14 @@
-﻿body {
+﻿
+/**************************
+***************************
+           Sizes
+***************************
+**************************/
+
+body {
     padding-top: 50px;
 }
 
-/* Set padding to keep content from hitting the edges */
-
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
@@ -16,16 +17,12 @@
 nav a {
     padding-top: 23px !important;
     padding-bottom: 23px !important;
-    font-size: 18px;
 }
 
 nav .navbar-toggle {
     margin: 13px 15px 13px 0;
 }
 
-.navbar-brand {
-    font-size: 30px;
-}
 
 
 #navImg {
@@ -34,15 +31,9 @@ nav .navbar-toggle {
 }
 
 
-
 nav.shrink a {
      padding-top: 15px !important;
   padding-bottom: 15px !important;
-  font-size: 15px;
-}
-
-nav.shrink .navbar-brand {
-  font-size: 25px;
 }
 
 nav.shrink .navbar-toggle {
@@ -77,17 +68,11 @@ nav.shrink #navImg {
 }
 
     .panel-primary > .panel-heading {
-        background-color: #900000;
-        border-color: #900000 !important;
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
         border-top-left-radius: 0px !important;
         border-top-right-radius: 0px !important;
     }
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #FFFFFF !important;
-}
 
 .news img {
     display: inline-block;
@@ -96,16 +81,12 @@ nav.shrink #navImg {
     max-width: 100%;
     padding: 4px;
     line-height: 1.428571429;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid;
     border-radius: 4px;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-.carousel-caption {
-    color: #337ab7 !important;
-}
 
 .header {
    
@@ -120,13 +101,6 @@ nav.shrink #navImg {
     padding: 60px 50px;
 }
 
-.dividers1 {
-    background-color: #FFFFFF;
-}
-
-.dividers2 {
-      background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);
-}
 
 input {
     margin-bottom: 18px !important;
@@ -142,7 +116,6 @@ input {
 .contact-glyphicon {
     top: -3px !important;
     left: 5px !important;
-    color: #0072c6;
 }
 
 
@@ -168,11 +141,111 @@ input {
   left:0;
   right:0;
   top:65px;
-  color:white !important;
 }
 
 .fb-like {
     top:-5px;
+}
+
+
+.glyphicon-news {
+    margin-right: 10px;
+}
+
+
+
+
+/**************************
+***************************
+           Color
+***************************
+**************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .panel-primary > .panel-heading {
+        background-color: #900000;
+        border-color: #900000 !important;
+    }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFFFFF !important;
+}
+
+.news img {
+  
+    background-color: #fff;
+    border-color: #ddd;
+    
+}
+
+.carousel-caption {
+    color: #337ab7 !important;
+}
+
+.dividers1 {
+    background-color: #FFFFFF;
+}
+
+.dividers2 {
+      background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);
+}
+
+.contact-glyphicon {
+    color: #0072c6;
+}
+
+
+.caption {
+  color:white !important;
+}
+
+
+h1, h2, h3 {
+  color:#0072c6 !important;
+}
+
+.salesTitle { /*make sales <h2> darker for better readability*/
+ color:#005492 !important;
+}
+.front {color:black !important}
+
+
+/**************************
+***************************
+           Font
+***************************
+**************************/
+
+
+nav a {
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+
+
+nav.shrink a {
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 25px;
 }
 
 p, b {
@@ -193,23 +266,14 @@ h1, h2, h3 {
     Arial,
     sans-serif !important;
   font-weight: 300 !important;
-  color:#0072c6 !important;
 }
 
 .displaceFix { /*Prevents persons section from additional rows with single person*/
       font-size:25px;
 }
 
-.salesTitle { /*make sales <h2> darker for better readability*/
- color:#005492 !important;
-}
-.front {color:black !important}
-
 footer * {
     font-weight: 300 !important;
     font-size:18px !important;
 }
 
-.glyphicon-news {
-    margin-right: 10px;
-}
