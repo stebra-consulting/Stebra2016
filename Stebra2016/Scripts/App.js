@@ -61,7 +61,10 @@
 
     //contact us form maintain scroll position
     if (document.getElementById('isPostBack')) {
-        window.location.hash = '#kontakta';
+
+        //commenting this out since Safari browser triggers it too early
+        //window.location.hash = '#kontakta'; 
+
         alert("Tack, vi har tagit emot ditt meddelande");
     }
 
