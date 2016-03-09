@@ -96,13 +96,11 @@
 
 
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 400) {
-            $('nav').addClass('shrink');
-            $("#navImg").attr("src", "/Images/Logo/stebra_logo_white_notagline.png");
+        if ($(document).scrollTop() > 250) {
+            $('nav').removeClass('navbar-inverse-transparant');
 
         } else {
-            $('nav').removeClass('shrink');
-            $("#navImg").attr("src", "/Images/Logo/stebra_logo_white.png");//stor med slogan
+             $('nav').addClass('navbar-inverse-transparant');
         }
     });
 
