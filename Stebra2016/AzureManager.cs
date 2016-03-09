@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 /// </summary>
 public class AzureManager
 {
-    private const string tableName = "stebraNyhetslist";
+    private const string tableName = "stebraNyhetslistDEV";
     private const string partitionKey = "Nyhet";
 
     private static CloudStorageAccount StorageAccount = CloudStorageAccount.Parse(Keys.AzureConnectionString);
