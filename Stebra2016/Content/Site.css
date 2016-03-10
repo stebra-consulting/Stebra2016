@@ -32,13 +32,13 @@ nav .navbar-toggle {
 
 
 nav.shrink a {
-     padding-top: 15px !important;
-  padding-bottom: 15px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
 }
 
 nav.shrink .navbar-toggle {
-  padding: 4px 5px;
-  margin: 8px 15px 8px 0;
+    padding: 4px 5px;
+    margin: 8px 15px 8px 0;
 }
 
 nav.shrink #navImg {
@@ -89,7 +89,6 @@ nav.shrink #navImg {
 
 
 .header {
-   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -122,29 +121,30 @@ input {
 .person {
     height: 200px;
 }
+
 .sellText {
     height: 200px;
-    width:200px;
+    width: 200px;
 }
 
 .overlay {
-   background:transparent; 
-   position:relative; 
-   width:100%;
-   height:500px; /* your iframe height */
-   top:500px;  /* your iframe height */
-   margin-top:-500px;  /* your iframe height */
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 500px; /* your iframe height */
+    top: 500px; /* your iframe height */
+    margin-top: -500px; /* your iframe height */
 }
 
 .caption {
-  position:absolute;
-  left:0;
-  right:0;
-  top:65px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65px;
 }
 
 .fb-like {
-    top:-5px;
+    top: -5px;
 }
 
 
@@ -177,6 +177,7 @@ input {
     margin: 0;
     padding: 0;
 }
+
 #headervideo #headervideoinner {
     position: relative;
     right: -50%;
@@ -204,35 +205,34 @@ input {
     background: #000;
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) {
 
-#headervideo #headervideoinner {
-    width: auto;
+    #headervideo #headervideoinner {
+        width: auto;
+    }
 }
 
-}
 
+@media screen and (max-width: 690px) {
 
-@media screen and (max-width: 690px){
+    #headervideo #headervideoinner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
-#headervideo #headervideoinner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
+        #headervideo #headervideoinner .img {
+            display: block;
+            background-size: cover;
+            background-position: center center;
+        }
 
-#headervideo #headervideoinner .img {
-    display: block;
-    background-size: cover;
-    background-position: center center;
-}
-#headervideo #headervideoinner video {
-    display: none;
-}
-
+        #headervideo #headervideoinner video {
+            display: none;
+        }
 }
 
 
@@ -245,30 +245,45 @@ input {
 **************************/
 
 
-.navbar-inverse-transparant {
-    background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0) 0,rgba(34, 34, 34, 0) 100%) !important;
-    background-color: rgba(34, 34, 34, 0) !important;
-    border-color: rgba(8, 8, 8, 0) !important;
-}
-
 .panel-primary > .panel-heading {
     background-color: #900000;
     border-color: #900000 !important;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: white !important;
-}
-    
-.navbar-inverse-transparant .navbar-nav > li > a {
-    color: black !important;
+
+
+
+@media screen and (max-width: 1400px) { /*DESKTOP*/
+
+    .navbar-inverse-transparant {
+        background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0) 0,rgba(34, 34, 34, 0) 100%) !important;
+        background-color: rgba(34, 34, 34, 0) !important;
+        border-color: rgba(8, 8, 8, 0) !important;
+    }
+
+        .navbar-inverse-transparant .navbar-nav > li > a {
+            color: black !important;
+        }
 }
 
+
+@media screen and (max-width: 750px) { /*MOBILE*/
+
+    .navbar-inverse-transparant {
+        background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%) !important;
+        background-color: #222 !important;
+        border-color: #080808 !important;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white !important;
+    }
+}
+
+
 .news img {
-  
     background-color: #fff;
     border-color: #ddd;
-    
 }
 
 .carousel-caption {
@@ -280,7 +295,7 @@ input {
 }
 
 .dividers2 {
-      background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);
+    background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);
 }
 
 .contact-glyphicon {
@@ -289,18 +304,21 @@ input {
 
 
 .caption {
-  color:white !important;
+    color: white !important;
 }
 
 
 h1, h2, h3 {
-  color:#0072c6 !important;
+    color: #0072c6 !important;
 }
 
 .salesTitle { /*make sales <h2> darker for better readability*/
- color:#005492 !important;
+    color: #005492 !important;
 }
-.front {color:black !important}
+
+.front {
+    color: black !important;
+}
 
 
 
@@ -329,39 +347,29 @@ nav a {
 
 
 nav.shrink a {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 nav.shrink .navbar-brand {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 p, b, a, .displaceFix {
-  font-family: 
-    "Segoe UI Semilight","Segoe UI","Segoe",
-    Tahoma,
-    Helvetica,
-    Arial,
-    sans-serif !important;
-  font-size:22px;
+    font-family: "Segoe UI Semilight","Segoe UI","Segoe", Tahoma, Helvetica, Arial, sans-serif !important;
+    font-size: 22px;
 }
 
 h1, h2, h3 {
-  font-family: 
-    "Segoe UI Semilight","Segoe UI","Segoe",
-    Tahoma,
-    Helvetica,
-    Arial,
-    sans-serif !important;
-  font-weight: 300 !important;
+    font-family: "Segoe UI Semilight","Segoe UI","Segoe", Tahoma, Helvetica, Arial, sans-serif !important;
+    font-weight: 300 !important;
 }
 
 footer * {
     font-weight: 300 !important;
-    font-size:18px !important;
+    font-size: 18px !important;
 }
 
 .customerLogo {
-    height:50px;
-    margin-bottom:50px;
+    height: 50px;
+    margin-bottom: 50px;
 }
