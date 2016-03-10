@@ -244,14 +244,16 @@ input {
 }
 /**************************
 ***************************
-           Color
+           Color 
+    a60400 is signal color
+    #ffe5c6 instead of white
 ***************************
 **************************/
 
 /*COLOR SOLID NAVBAR*/
 .navbar-inverse {
-    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%) !important;
-    background-color: #222 !important;
+    background-image: linear-gradient(to bottom,#4e2020 0,#2f1919 100%) !important;
+    background-color: #2f1919 !important;
 }
 
 @media screen and (min-width: 750px) {
@@ -264,31 +266,31 @@ input {
     }
     /*COLOR NAVTEXT, LOGO WHEN DESKTOP*/
     .navbar-inverse-transparant .navbar-nav > li > a, .logo path {
-        color: black !important;
-        fill: black !important; /*.logo path*/
+        color: #a60400 !important;
+        fill: #a60400 !important; /*.logo path*/
     }
 }
 
 @media screen and (max-width: 750px) { 
     .navbar-inverse-transparant {
-        background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%) !important;
-        background-color: #222 !important;
+        background-image: linear-gradient(to bottom,#4e2020 0,#2f1919 100%) !important;
+        background-color: #2f1919 !important;
     }
     /*COLOR NAVTEXT, LOGO WHEN MOBILE*/
     .navbar-inverse .navbar-nav > li > a, .logo path {
-        color: white !important;
-        fill: white !important; /*.logo path*/
+        color: #ffe5c6 !important;
+        fill: #ffe5c6 !important; /*.logo path*/
     }
 }
 
 /*IMAGE PLACEHOLDER*/
 .placeholder {
-    background-color:blue;
+    background-color:#a60400;
 }
 
 /*FONT HEADLINES & GLYPHICONS */
 h1, h2, h3, .glyphicon {
-    color: blue !important;
+    color: #a60400 !important;
 }
 
 /*DARK FONT COLOR */
@@ -296,8 +298,8 @@ p, b {
     color:black !important;
 }
 
-.dividers1 { /*Bright Sections*/
-    background-color: white;
+.dividers1, .form-control { /*Bright Sections*/
+    background-color: #ffe5c6 !important;
 }
 
 .dividers2 { /*gradient Sections*/
@@ -306,8 +308,13 @@ p, b {
 
 /*BRIGHT FONT COLOR*/
 .caption, .solid-logo path, footer *  { 
-    color: white !important; /*.caption: förstudie bild rubrik*/
-    fill: white !important; /*.solid-logo path*/
+    color: #ffe5c6 !important; /*.caption: förstudie bild rubrik*/
+    fill: #ffe5c6 !important; /*.solid-logo path*/
+}
+
+.news img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 /**************************
