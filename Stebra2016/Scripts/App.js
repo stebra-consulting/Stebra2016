@@ -96,11 +96,14 @@
 
 
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 250) {
-            $('nav').removeClass('navbar-inverse-transparant');
+        if ($(document).scrollTop() < 250) { //Browser window is top
+            $('nav').addClass('navbar-inverse-transparant');
+            $('#navImg').attr("src", "/Images/Logo/stebra_logo_black_notagline.png");
 
-        } else {
-             $('nav').addClass('navbar-inverse-transparant');
+
+        } else {  //Browser window scrolled down under header
+            $('nav').removeClass('navbar-inverse-transparant');
+            $('#navImg').attr("src", "/Images/Logo/stebra_logo_white_notagline.png"); 
         }
     });
 
