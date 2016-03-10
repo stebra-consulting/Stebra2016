@@ -225,12 +225,16 @@ input {
     border-color: rgba(8, 8, 8, 0) !important;
 }
 
-    .panel-primary > .panel-heading {
-        background-color: #900000;
-        border-color: #900000 !important;
-    }
+.panel-primary > .panel-heading {
+    background-color: #900000;
+    border-color: #900000 !important;
+}
 
 .navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+}
+    
+.navbar-inverse-transparant .navbar-nav > li > a {
     color: black !important;
 }
 
