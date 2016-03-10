@@ -98,14 +98,57 @@
     $(window).scroll(function () {
         if ($(document).scrollTop() < 250) { //Browser window is top
             $('nav').addClass('navbar-inverse-transparant');
-            $('#navImg').attr("src", "/Images/Logo/stebra_logo_black_notagline.png");
 
+            $('#navImg').removeClass('solid-logo');
+
+
+            //if logo is bitmap:
+            //$('#navImg').attr("src", "/Images/Logo/stebra_logo_black_notagline.png");
 
         } else {  //Browser window scrolled down under header
             $('nav').removeClass('navbar-inverse-transparant');
-            $('#navImg').attr("src", "/Images/Logo/stebra_logo_white_notagline.png"); 
+
+            $('#navImg').addClass('solid-logo');
+
+            //$('#navImg').removeClass('logo');
+
+
+            //if logo is bitmap:
+            //$('#navImg').attr("src", "/Images/Logo/stebra_logo_white_notagline.png");
         }
     });
 
+
+    /*
+       * Replace all SVG images with inline SVG
+       */
+    $('img.svg').each(function () {
+        var $img = $(this);
+        var imgID = $img.attr('id');
+        var imgClass = $img.attr('class');
+        var imgURL = $img.attr('src');
+
+        $.get(imgURL, function (data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = $(data).find('svg');
+
+            // Add replaced image's ID to the new SVG
+            if (typeof imgID !== 'undefined') {
+                $svg = $svg.attr('id', imgID);
+            }
+            // Add replaced image's classes to the new SVG
+            if (typeof imgClass !== 'undefined') {
+                $svg = $svg.attr('class', imgClass + ' replaced-svg');
+            }
+
+            // Remove any invalid XML tags as per http://validator.w3.org
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Replace image with new SVG
+            $img.replaceWith($svg);
+
+        }, 'xml');
+
+    });
 
 });

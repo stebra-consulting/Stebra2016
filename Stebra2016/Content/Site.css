@@ -245,10 +245,14 @@ input {
 **************************/
 
 
+
+
 .panel-primary > .panel-heading {
     background-color: #900000;
     border-color: #900000 !important;
 }
+
+
 
 
 
@@ -261,11 +265,15 @@ input {
         border-color: rgba(8, 8, 8, 0) !important;
     }
 
-        .navbar-inverse-transparant .navbar-nav > li > a {
-            color: black !important;
-        }
-}
+    .navbar-inverse-transparant .navbar-nav > li > a {
+        color: black !important;
+    }
 
+    .logo path {
+        fill: black !important;
+    }
+
+}
 
 @media screen and (max-width: 750px) { /*MOBILE*/
 
@@ -278,8 +286,15 @@ input {
     .navbar-inverse .navbar-nav > li > a {
         color: white !important;
     }
+
+    .logo path {
+        fill: white !important;
+    }
 }
 
+.solid-logo path { /*When navbar is solid, fill accordingly*/
+    fill: white !important;
+}
 
 .news img {
     background-color: #fff;
@@ -373,3 +388,5 @@ footer * {
     height: 50px;
     margin-bottom: 50px;
 }
+
+
