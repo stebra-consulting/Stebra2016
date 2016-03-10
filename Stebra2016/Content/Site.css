@@ -155,7 +155,7 @@ input {
 
 
 
-#startimg #startimginner video {
+#headervideo #headervideoinner video {
     position: relative;
     left: -50%;
     min-width: 100%;
@@ -167,7 +167,7 @@ input {
     bottom: 200px;
 }
 
-#startimg #startimginner .img {
+#headervideo #headervideoinner .img {
     position: absolute;
     top: 0;
     left: 0;
@@ -177,7 +177,7 @@ input {
     margin: 0;
     padding: 0;
 }
-#startimg #startimginner {
+#headervideo #headervideoinner {
     position: relative;
     right: -50%;
     display: inline-block;
@@ -190,7 +190,7 @@ input {
     transition: opacity 1s ease;
 }
 
-#startimg {
+#headervideo {
     position: absolute;
     top: 0;
     left: 0;
@@ -204,10 +204,36 @@ input {
     background: #000;
 }
 
+@media screen and (max-width: 1400px){
+
+#headervideo #headervideoinner {
+    width: auto;
+}
+
+}
 
 
+@media screen and (max-width: 690px){
 
+#headervideo #headervideoinner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
+#headervideo #headervideoinner .img {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+}
+#headervideo #headervideoinner video {
+    display: none;
+}
+
+}
 
 
 
