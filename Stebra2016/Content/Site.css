@@ -280,7 +280,7 @@ h1, h2, h3, .glyphicon {
     color: blue !important;
 }
 
-/*FONT COLOR */
+/*DARK FONT COLOR */
 p, b {
     color:black !important;
 }
@@ -293,13 +293,10 @@ p, b {
     background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);
 }
 
-.caption, .solid-logo path { 
+/*BRIGHT FONT COLOR*/
+.caption, .solid-logo path, footer *  { 
     color: white !important; /*.caption: förstudie bild rubrik*/
     fill: white !important; /*.solid-logo path*/
-}
-
-footer * {
-    color:white !important;
 }
 
 /**************************
