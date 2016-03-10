@@ -248,6 +248,12 @@ input {
 ***************************
 **************************/
 
+/*COLOR SOLID NAVBAR*/
+.navbar-inverse {
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%) !important;
+    background-color: #222 !important;
+}
+
 @media screen and (min-width: 750px) {
     .navbar-inverse-transparant {
         background-image: linear-gradient(to bottom,
@@ -257,7 +263,7 @@ input {
         border-color: rgba(0, 0, 0, 0) !important;
     }
     /*COLOR NAVTEXT, LOGO WHEN DESKTOP*/
-    .navbar-inverse-transparant .navbar-nav > li > a, .logo path{
+    .navbar-inverse-transparant .navbar-nav > li > a, .logo path {
         color: black !important;
         fill: black !important; /*.logo path*/
     }
@@ -273,6 +279,11 @@ input {
         color: white !important;
         fill: white !important; /*.logo path*/
     }
+}
+
+/*IMAGE PLACEHOLDER*/
+.placeholder {
+    background-color:blue;
 }
 
 /*FONT HEADLINES & GLYPHICONS */
