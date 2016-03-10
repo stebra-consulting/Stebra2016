@@ -275,14 +275,14 @@ input {
     }
 }
 
-.caption, .solid-logo path { 
-    color: white !important; /*.caption: förstudie bild rubrik*/
-    fill: white !important; /*.solid-logo path*/
-}
-
 /*FONT HEADLINES & GLYPHICONS */
 h1, h2, h3, .glyphicon {
     color: blue !important;
+}
+
+/*FONT COLOR */
+p, b {
+    color:black !important;
 }
 
 .dividers1 { /*Bright Sections*/
@@ -291,6 +291,15 @@ h1, h2, h3, .glyphicon {
 
 .dividers2 { /*gradient Sections*/
     background-image: linear-gradient(to bottom,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);
+}
+
+.caption, .solid-logo path { 
+    color: white !important; /*.caption: förstudie bild rubrik*/
+    fill: white !important; /*.solid-logo path*/
+}
+
+footer * {
+    color:white !important;
 }
 
 /**************************
