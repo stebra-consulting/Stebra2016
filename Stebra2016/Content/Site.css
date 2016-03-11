@@ -5,6 +5,12 @@
 ***************************
 **************************/
 
+
+/*Alla Rubriker*/
+.titles {
+text-align:center;
+}
+
 body {
     padding-top: 50px;
 }
@@ -78,7 +84,7 @@ nav.shrink #navImg {
     display: inline-block;
     display: block;
     height: auto;
-    max-width: 100%;
+    max-width: 70%;
     padding: 4px;
     line-height: 1.428571429;
     border: 1px solid;
@@ -215,14 +221,14 @@ input {
 
 @media screen and (max-width: 690px) {
 
-    #headervideo #headervideoinner {
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
+        #headervideo #headervideoinner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
 
         #headervideo #headervideoinner .img {
             display: block;
@@ -249,6 +255,14 @@ input {
     #ffe5c6 instead of white
 ***************************
 **************************/
+
+/*Input Color placeholder atr*/
+::-webkit-input-placeholder{color: #a60400 !important;}
+:-moz-placeholder{color:#a60400 !important;/* For Firefox 18- */}
+::-moz-placeholder{color:#a60400 !important;/* For Firefox 19+ */}
+:-ms-input-placeholder{color:#a60400 !important;}
+
+
 
 /*COLOR SOLID NAVBAR*/
 .navbar-inverse {
@@ -278,8 +292,8 @@ input {
     }
     /*COLOR NAVTEXT, LOGO WHEN MOBILE*/
     .navbar-inverse .navbar-nav > li > a, .logo path {
-        color: #ffe5c6 !important;
-        fill: #ffe5c6 !important; /*.logo path*/
+        color: #FFFFFF !important;
+        fill: #FFFFFF !important; /*.logo path*/
     }
 }
 
@@ -299,7 +313,7 @@ p, b {
 }
 
 .dividers1, .form-control { /*Bright Sections*/
-    background-color: #ffe5c6 !important;
+    background-color: #FFFFFF !important;
 }
 
 .dividers2 { /*gradient Sections*/
@@ -308,13 +322,17 @@ p, b {
 
 /*BRIGHT FONT COLOR*/
 .caption, .solid-logo path, footer *  { 
-    color: #ffe5c6 !important; /*.caption: förstudie bild rubrik*/
-    fill: #ffe5c6 !important; /*.solid-logo path*/
+    color: #FFFFFF !important; /*.caption: förstudie bild rubrik*/
+    fill: #FFFFFF !important; /*.solid-logo path*/
 }
 
 .news img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.btn-default, .btn-default:hover {
+color:#a60400 !important;
 }
 
 /**************************
