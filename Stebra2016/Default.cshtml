@@ -19,8 +19,8 @@
 }
 
 
-
-<div style="position:absolute;top:70px;">
+@*  *@
+@*<div style="position:absolute;top:70px;">
     <div id="helper" class="glyphicon glyphicon-cog" style="display:none;font-size:50px;"></div>
     <div id="colorPicker" style="background-color:white;height:500px;width:200px;border-radius:5px;border-color:black;border:solid;display:none">
         <div style="height: 50px;position: relative;">
@@ -42,7 +42,7 @@
 
 
     </div>
-</div>
+</div>*@
 
 <div id="headervideo" style="min-height: 464px;max-height:400px">
     <div id="headervideoinner" style="opacity: 1;">
@@ -94,6 +94,7 @@
 
 <div class="container-fluid dividers2">
     <div class="container">
+        <h1 class="titles">Vad gör vi? </h1>
         <div class="col-lg-6" style="margin-bottom:30px">
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/prestudy.jpg" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
@@ -120,9 +121,8 @@
                 eller vill starta upp ett helt nytt projekt från ruta ett så hjälper vi er i mål.
                 Vi tar er från ax till limpa vidare till smörgåsbordet och har alltid ett helhetstänk i fokus.
             </p>
-        </div>
-
-
+        </div>   
+            
         <div class="col-lg-6">
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/maintenance.jpg" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
@@ -145,12 +145,60 @@
                 eller att nå ut till era sociala medier med bara ett klick.
             </p>
         </div>
+        <div class="col-lg-12">
+            <br /><br /><br /><br /><br /><br />
+            <p>
 
-        <br><br><br>
+                Vi på Stebra Consulting levererar Moln- och Konsulttjänster inom informationshantering. Enkelt förklarat hjälper vi företag att effektivisera sin verksamhet genom förbättrade flöden inom dokumenthantering, IT-system och verksamhetsprocesser.
+                Det kan till exempel vara att leverera ett system som hanterar kundens interna dokument och öka sökbarheten, eller att skapa en plattform för kundens interna och externa kommunikation innehållande mail, chatfunktion, teamsidor och konferenssystem.
+
+                Teamet bakom Stebra Consulting har över femton års erfarenhet av att göra just detta. Våra kunder är allt från stora globala företag och myndigheter till mindre privatägda företag inom byggindustrin.
+
+                Då vi har bland marknadens bästa kompetenser inom SharePoint-lösningar och kravhantering är vi välrenommerade i branschen.
+                Vi är stolta SharePoint-partners till bland andra HiQ, Tieto och Xperta.
+
+            </p>
+        </div>
+       
     </div><br />
 </div>
 
-<div class="container-fluid dividers1">
+
+
+
+
+
+
+
+
+<div id="nyheter" class="container-fluid dividers1">
+    <div class="container">
+        <!-- 1st single news -->
+        <div class="col-lg-12 titles">
+            <br />
+            <h2 style="color:black">Senaste nytt</h2>
+        </div>
+        <div class="col-lg-6 news">
+            <br />
+            <img src="@sortedEntries[0].Image" alt="firstImage" />
+        </div>
+        <div class="col-lg-6">
+            <h3 style="color:black">@sortedEntries[0].Title</h3>
+            <p>
+                @Html.Raw(sortedEntries[0].Body)
+            </p>
+            <span class="glyphicon glyphicon-user pull-left glyphicon-eye-open glyphicon-news"></span>
+            <span class="glyphicon pull-left glyphicon-eye-open"></span><br />
+            <a class="links" href="http://newsflashon.azurewebsites.net/">Läs Mer...</a>
+            <p><i>@Html.Raw(@sortedEntries[0].sweDate)</i></p>
+        </div>
+        <br />
+        <br />
+        <br /><br />
+        <br />
+    </div>
+</div>
+<div class="container-fluid dividers2" style="background-image: linear-gradient(to top,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);">
     <div id="omStebra2" class="container">
 
         <div class="container">
@@ -180,61 +228,6 @@
     </div>
     <br />
 </div>
-
-
-<div class="container-fluid dividers2">
-    <div id="omStebra3" class="container">
-        <div class="container">
-            <div class="col-lg-12">
-                <h1 class="titles">Vad gör vi? </h1>
-                <p>
-
-                    Vi på Stebra Consulting levererar Moln- och Konsulttjänster inom informationshantering. Enkelt förklarat hjälper vi företag att effektivisera sin verksamhet genom förbättrade flöden inom dokumenthantering, IT-system och verksamhetsprocesser.
-                    Det kan till exempel vara att leverera ett system som hanterar kundens interna dokument och öka sökbarheten, eller att skapa en plattform för kundens interna och externa kommunikation innehållande mail, chatfunktion, teamsidor och konferenssystem.
-
-                    Teamet bakom Stebra Consulting har över femton års erfarenhet av att göra just detta. Våra kunder är allt från stora globala företag och myndigheter till mindre privatägda företag inom byggindustrin.
-
-                    Då vi har bland marknadens bästa kompetenser inom SharePoint-lösningar och kravhantering är vi välrenommerade i branschen.
-                    Vi är stolta SharePoint-partners till bland andra HiQ, Tieto och Xperta.
-
-                </p>
-            </div>
-        </div>
-    </div>
-    <div></div>
-</div>
-
-
-
-
-<div id="nyheter" class="container-fluid dividers1">
-    <div class="container">
-        <!-- 1st single news -->
-        <div class="col-lg-12 titles">
-            <br />
-            <h2 style="color:black">Senaste nytt</h2>
-        </div>
-        <div class="col-lg-6 news">
-            <br />
-            <img src="@sortedEntries[0].Image" alt="firstImage" />
-        </div>
-        <div class="col-lg-6">
-            <h3 style="color:black">@sortedEntries[0].Title</h3>
-            <p>
-                @Html.Raw(sortedEntries[0].Body)
-            </p>
-            <span class="glyphicon glyphicon-user pull-left glyphicon-eye-open glyphicon-news"></span>
-            <span class="glyphicon pull-left glyphicon-eye-open"></span><br />
-            <a href="http://newsflashon.azurewebsites.net/">Läs Mer...</a>
-            <p><i>@Html.Raw(@sortedEntries[0].sweDate)</i></p>
-        </div>
-        <br />
-        <br />
-        <br /><br />
-        <br />
-    </div>
-</div>
-
 
 <div id="vilka" class="container-fluid dividers2">
     <div class="container">
@@ -272,7 +265,7 @@
                     <div class="text-center"><img src="~/Images/Persons/Felix.jpg" class="img-circle person" /></div>
                     <div class="text-center">
                         <h3>Felix</h3>
-                        <h4>SharePoint, Office365 Designer </h4>
+                        <h4>Frontend, .NET, SharePoint, Office365 Designer </h4>
                         <h4>Roll i teamet: Designer, Utvecklare frontend</h4>
                         <p class="displaceFix">Felix Freye besitter dubbel kompetens, både som fullfjädrad Industridesigner men också ett gediget utvecklarintresse som tagit honom från IOS utveckling, och appar som "Falling Monk". Nu bygger han SharePoint appar.</p>
                     </div>
@@ -282,7 +275,7 @@
                     <div class="text-center"><img src="~/Images/Persons/Simon.jpg" class="img-circle person" /></div>
                     <div class="text-center">
                         <h3>Simon</h3>
-                        <h4>SharePoint, Office365 Developer </h4>
+                        <h4>Frontend, .NET, SharePoint, Office365 Developer </h4>
                         <h4>Roll i teamet: Utvecklare​ och KodMentor</h4>
                         <p class="displaceFix">Simon Bergqvist en av de bättre systemutvecklarna du någonsin kommer träffa på, har extremt lätt att ta till sig nya teknologier, och delar gärna med sig av sina erfarenheter. </p>
                     </div>
@@ -356,21 +349,21 @@
         </div>
         <div class="col-lg-12">
             <div class="col-lg-6" style="margin-bottom:30px">
-                <div class="text-center"><img src="~/Images/App_Bilder/Check It In.png" class="" /></div>
+                <div class="text-center"><img height="100" width="100"  src="~/Images/App_Bilder/Check It In.png" class="" /></div>
                 <div class="text-center">
                     <h2>Check It In</h2>
                     <p class="displaceFix">Check It In tillåter användare att enkelt hitta och checka in sina filer.</p>
-                    <a href="../checkitin">Läs mer... </a>
+                    <a class="links" href="../apps/checkitin">Läs mer... </a>
                 </div>
 
             </div>
 
             <div class="col-lg-6" style="margin-bottom:30px">
-                <div class="text-center"><img src="~/Images/App_Bilder/Check It In.png" class="" /></div>
+                <div class="text-center"><img height="100" width="100" src="~/Images/App_Bilder/newsflash_v1.png" class="" /></div>
                 <div class="text-center">
                     <h2>Newsflash</h2>
-                    <p class="displaceFix">Newsflash...</p>
-                    <a href="http://newsflashon.azurewebsites.net/">Läs mer... </a>
+                    <p class="displaceFix">Newsflash... Kommer snart!</p>
+                    @*<a class="links" >Läs mer... </a>*@
                 </div>
             </div>
         </div>

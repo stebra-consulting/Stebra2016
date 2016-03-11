@@ -266,8 +266,10 @@ input {
 
 /*COLOR SOLID NAVBAR*/
 .navbar-inverse {
-    background-image: linear-gradient(to bottom,#4e2020 0,#2f1919 100%) !important;
-    background-color: #2f1919 !important;
+    /*background-image: linear-gradient(to bottom,#4e2020 0,#2f1919 100%) !important;
+    background-color: #2f1919 !important;*/
+    background-color: #a60400 !important;
+    background-image: linear-gradient(to bottom,rgb(255, 0, 0) 0,rgba(0, 0, 0, 0.88) 100%) !important;
 }
 
 @media screen and (min-width: 750px) {
@@ -287,8 +289,8 @@ input {
 
 @media screen and (max-width: 750px) { 
     .navbar-inverse-transparant {
-        background-image: linear-gradient(to bottom,#4e2020 0,#2f1919 100%) !important;
-        background-color: #2f1919 !important;
+    background-color: #a60400 !important;
+    background-image: linear-gradient(to bottom,rgb(255, 0, 0) 0,rgba(0, 0, 0, 0.88) 100%) !important;
     }
     /*COLOR NAVTEXT, LOGO WHEN MOBILE*/
     .navbar-inverse .navbar-nav > li > a, .logo path {
@@ -300,10 +302,11 @@ input {
 /*IMAGE PLACEHOLDER*/
 .placeholder {
     background-color:#a60400;
+    background-image: linear-gradient(to bottom,rgb(255, 0, 0) 0,rgba(0, 0, 0, 0.88) 100%);
 }
 
 /*FONT HEADLINES & GLYPHICONS */
-h1, h2, h3, #nyheter a, .glyphicon, .btn-default, .btn-default:hover {
+h1, h2, h3, .links, .glyphicon, .btn-default, .btn-default:hover {
     color: #a60400 !important;
 }
 

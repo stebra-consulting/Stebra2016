@@ -15,10 +15,15 @@
 
     }
 }
+<script type="text/javascript">
+    $(".navbar-nav").html("<li><a href='..'>Tillbaka</a></li>");
+
+</script>
+
 <div id="headervideo" style="min-height: 464px;max-height:400px">
     <div id="headervideoinner" style="opacity: 1;">
-        <div class="img responsive hide-desktop" style="background-image: url('Images/Header/clouds.png');"></div>
-        <video style="background: transparent no-repeat url('Images/Header/clouds.png');background-size:100%; background-position:top center;' ,sizingmethod='scale' );" width="100%" height="400px" autoplay="" muted="" loop="">
+        <div class="img responsive hide-desktop" style="background-image: url('../Images/Header/clouds.png');"></div>
+        <video style="background: transparent no-repeat url('../Images/Header/clouds.png');background-size:100%; background-position:top center;' ,sizingmethod='scale' );" width="100%" height="400px" autoplay="" muted="" loop="">
             <source src="http://stebrastashed.blob.core.windows.net/videos/clouds.mp4" type="video/mp4">
         </video>
     </div>
@@ -26,8 +31,10 @@
 <section class="jumbotron text-center header" style="
     background: transparent;    position: relative;
     z-index: 0;">
-    <h2 style="font-size:6em">Stebra</h2>
-    <h2 style="font-size:3em">Alltid lite bättre</h2>
+    @*<h2 style="font-size:6em">Stebra</h2>*@
+    <br /><br />
+    <h2 style="font-size:5em">Alltid lite bättre</h2>
+    <br /><br /><br /><br />
 </section>
 
 <div class="container-fluid dividers1">
@@ -74,12 +81,12 @@
 
                 <form action="~/Default.cshtml" href="#kontakta">
                     <span class="glyphicon glyphicon-user pull-left contact-glyphicon"></span>
-                    <input class="form-control" id="name" name="name" placeholder="Namn" type="text" required="">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required="">
 
 
 
                     <span class="glyphicon glyphicon-envelope pull-left contact-glyphicon"></span>
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="">
+                    <input class="form-control" id="email" name="email" placeholder="Mail" type="email" required="">
 
                     <span class="glyphicon glyphicon-comment pull-left contact-glyphicon"></span>
                     <textarea class="form-control" id="comments" name="comments" placeholder="Message / leave your mobilenumber if you want to have a conversation with Stebra" rows="8"></textarea><br>
