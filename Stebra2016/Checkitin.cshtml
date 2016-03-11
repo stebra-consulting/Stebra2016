@@ -1,0 +1,94 @@
+﻿@{
+    Layout = "~/_Layout.cshtml";
+    Page.Title = "Stebra Consulting";
+
+    var result = Request["contactForm"];
+    var name = Request["name"];
+    var email = Request["email"];
+    var comments = Request["comments"];
+
+    if (result != null)
+    {
+        <div id="isPostBack" value="true">
+            @Mail.Send(name, email, comments);
+        </div>
+
+    }
+}
+<div id="headervideo" style="min-height: 464px;max-height:400px">
+    <div id="headervideoinner" style="opacity: 1;">
+        <div class="img responsive hide-desktop" style="background-image: url('Images/Header/clouds.png');"></div>
+        <video style="background: transparent no-repeat url('Images/Header/clouds.png');background-size:100%; background-position:top center;' ,sizingmethod='scale' );" width="100%" height="400px" autoplay="" muted="" loop="">
+            <source src="http://stebrastashed.blob.core.windows.net/videos/clouds.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+<section class="jumbotron text-center header" style="
+    background: transparent;    position: relative;
+    z-index: 0;">
+    <h2 style="font-size:6em">Stebra</h2>
+    <h2 style="font-size:3em">Alltid lite bättre</h2>
+</section>
+
+<div class="container-fluid dividers1">
+    <div id="omStebra" class="container">
+
+        <div class="container">
+            <div class="col-lg-12">
+                <h1 class="titles">Check It In </h1>
+
+                <p>
+                    ​Useradoption is sometimes like a river, obstacles toss and turns water into diffrent directions, Sometimes however, the obstacle might be a bit to big. The river may find another way. As a system provider you dont want your users to go in some other directions. You would want your users to overcome obstacles or you would probably want to remove the obstacles. Our challange here is to know which obstacles to remove.
+                    <br /><br />
+
+
+                    This behaviour sometimes occurs with the check out, check in process. The checked out files, was maybe forgotten and quickly becomes a huge obstacle for the next user. Instead of contacting an administrator or the person that actually checked out the file, who happens to be away on a short parental leave, the user quickly makes another copy of the file and maybe even finds some alternative storage. And suddenly we got a case of unmanaged content. This might not be so bad at a first glance. But when the issue repeats itself, it becomes case of thousand documents and a river of users taking other users to other places where you definently dont want them to be.
+
+                    <br /><br />
+
+                    We think that the best way to solve this issue is to help your users  into always checking in their content, through easy methods, with the "check it in"-app, your users are constantly reminded of their checked out documents, and can easily make them available to others through a single click. Your users, may even start to enjoy the process, since the checked out documents are very easy accessed through our App.  Download from App store today, and remove some obstacle from your useradoptionriver.
+                    
+                    <br /><br />
+                    Try it for free <a href="https://store.office.com/app.aspx?assetid=WA104379142&ui=en-US&rs=en-US&ad=US&appredirect=false&pmo=SE"><img style="cursor: pointer;" height="46" width="46" src="~/Images/App_Bilder/Check It In.png"/></a>
+
+
+                    <br /><br />
+
+                    Stebra Check It In allows users to easily find and check in their checked out files. This app lists the checked out files in an easy and intuitive way as a reminder to check them in. To check in a file just select the file from the list and press the Check in button.
+                    <!-- glyphicon glyphicon-hand-right -->
+                    
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="kontakta" class="container-fluid dividers1 map">
+    <div class="container bg-grey">
+        <h2 class="titles">Contact us</h2>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-6 col-lg-push-3 col-sm-9 col-xs-12 form-group">
+
+                <form action="~/Default.cshtml" href="#kontakta">
+                    <span class="glyphicon glyphicon-user pull-left contact-glyphicon"></span>
+                    <input class="form-control" id="name" name="name" placeholder="Namn" type="text" required="">
+
+
+
+                    <span class="glyphicon glyphicon-envelope pull-left contact-glyphicon"></span>
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="">
+
+                    <span class="glyphicon glyphicon-comment pull-left contact-glyphicon"></span>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Message / leave your mobilenumber if you want to have a conversation with Stebra" rows="8"></textarea><br>
+
+                    <button id="submitMyMessage" class="btn btn-default pull-right" type="submit" name="contactForm" value="xx">Send to info@Stebra.se</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
