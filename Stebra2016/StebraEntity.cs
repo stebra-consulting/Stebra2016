@@ -31,7 +31,6 @@ public class StebraEntity : TableEntity
         string yyyy = ddmmyyyy.Split('/')[2];
         int yyyymmdd = int.Parse(yyyy + mm + dd);
         this.IntDate = yyyymmdd;//int Date property as yyyymmdd for sort/query against list of this object
-
     }
 
     public string Description { get; set; }
@@ -41,4 +40,5 @@ public class StebraEntity : TableEntity
     public string Date { get; set; }
     public int IntDate { get; set; }
     public string Image { get; set; }
+    public string sweDate { get; set; }
 }

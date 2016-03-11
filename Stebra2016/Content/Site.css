@@ -84,9 +84,9 @@ nav.shrink #navImg {
     display: inline-block;
     display: block;
     height: auto;
-    max-width: 70%;
     padding: 4px;
     line-height: 1.428571429;
+    max-width: 500px;
     border: 1px solid;
     border-radius: 4px;
     -webkit-transition: all .2s ease-in-out;
@@ -216,10 +216,16 @@ input {
     #headervideo #headervideoinner {
         width: auto;
     }
+    
 }
 
 
 @media screen and (max-width: 690px) {
+        .news img {
+           
+            max-width: 100% !important;
+        }
+
 
         #headervideo #headervideoinner {
             position: absolute;
@@ -255,12 +261,6 @@ input {
     #ffe5c6 instead of white
 ***************************
 **************************/
-
-/*Input Color placeholder atr*/
-::-webkit-input-placeholder{color: #a60400 !important;}
-:-moz-placeholder{color:#a60400 !important;/* For Firefox 18- */}
-::-moz-placeholder{color:#a60400 !important;/* For Firefox 19+ */}
-:-ms-input-placeholder{color:#a60400 !important;}
 
 
 
@@ -303,9 +303,15 @@ input {
 }
 
 /*FONT HEADLINES & GLYPHICONS */
-h1, h2, h3, .glyphicon {
+h1, h2, h3, #nyheter a, .glyphicon, .btn-default, .btn-default:hover {
     color: #a60400 !important;
 }
+
+/*Input Color placeholder atr*/
+::-webkit-input-placeholder{color: #a60400 !important;}
+:-moz-placeholder{color:#a60400 !important;/* For Firefox 18- */}
+::-moz-placeholder{color:#a60400 !important;/* For Firefox 19+ */}
+:-ms-input-placeholder{color:#a60400 !important;}
 
 /*DARK FONT COLOR */
 p, b {
@@ -331,9 +337,7 @@ p, b {
     filter: grayscale(100%);
 }
 
-.btn-default, .btn-default:hover {
-color:#a60400 !important;
-}
+
 
 /**************************
 ***************************
