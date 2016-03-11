@@ -96,7 +96,7 @@
 
 
     $(window).scroll(function () {
-        if ($(document).scrollTop() < 250) { //Browser window is top
+        if ($(document).scrollTop() < 300) { //Browser window is top
             $('nav').addClass('navbar-inverse-transparant');
 
             $('#navImg').removeClass('solid-logo');
