@@ -355,6 +355,8 @@ p, b {
 **************************/
 
 
+
+
 nav a {
     font-size: 18px;
 }
@@ -401,5 +403,7 @@ footer * {
 
     font-family: "Times New Roman", Times, serif !important;
 }
-
+.bold {
+font-weight:500;
+}
 
