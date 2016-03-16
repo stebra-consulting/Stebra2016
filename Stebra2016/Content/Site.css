@@ -53,6 +53,7 @@ nav.shrink #navImg {
 }
 
 
+
 .fill {
     width: 100%;
     min-height: 400px !important;
@@ -159,8 +160,6 @@ input {
 }
 
 
-
-
 #headervideo #headervideoinner video {
     position: relative;
     left: -50%;
@@ -219,7 +218,6 @@ input {
     
 }
 
-
 @media screen and (max-width: 690px) {
         .news img {
            
@@ -254,6 +252,20 @@ input {
 .navbar-collapse {
     border-color: rgba(0, 0, 0, 0) !important;
 }
+
+hr {
+    border: none;
+    height: 2px !important;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+#nyheter {
+    background-image:url("../Images/texture_seamless_repeat.jpg");
+}
+
+
 /**************************
 ***************************
            Color 
@@ -261,8 +273,6 @@ input {
     #ffe5c6 instead of white
 ***************************
 **************************/
-
-
 
 /*COLOR SOLID NAVBAR*/
 .navbar-inverse {
@@ -335,10 +345,6 @@ p, b {
     fill: #FFFFFF !important; /*.solid-logo path*/
 }
 
-.news img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
 
 
 
@@ -385,6 +391,15 @@ footer * {
 .customerLogo {
     height: 50px;
     margin-bottom: 50px;
+}
+
+#nyheter p, 
+#nyheter h1, 
+#nyheter h2,
+#nyheter h3
+{
+
+    font-family: "Times New Roman", Times, serif !important;
 }
 
 

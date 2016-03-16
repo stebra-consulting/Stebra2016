@@ -170,27 +170,31 @@
 
 
 
-
+<!-- SENASTE NYTT -->
 <div id="nyheter" class="container-fluid dividers1">
     <div class="container">
-        <!-- 1st single news -->
         <div class="col-lg-12 titles">
             <br />
-            <h2 style="color:black">Senaste nytt</h2>
+            @*<h2 style="color:black !important">Senaste nytt</h2>*@
+            <img src="~/Images/senasteNytt.png"/>
+            <hr />
+            <p>STOCKHOLM, @Html.Raw(@sortedEntries[0].sweDate), FRÅN NEWSFLASH</p>
+            <hr />
         </div>
         <div class="col-lg-6 news">
             <br />
             <img src="@sortedEntries[0].Image" alt="firstImage" />
         </div>
         <div class="col-lg-6">
-            <h3 style="color:black">@sortedEntries[0].Title</h3>
+            <h1 style="color:black !important">@sortedEntries[0].Title</h1>
+            <hr />
             <p>
                 @Html.Raw(sortedEntries[0].Body)
             </p>
-            <span class="glyphicon glyphicon-user pull-left glyphicon-eye-open glyphicon-news"></span>
-            <span class="glyphicon pull-left glyphicon-eye-open"></span><br />
+            <span style="color:black !important" class="glyphicon glyphicon-user pull-left glyphicon-eye-open glyphicon-news"></span>
+            <span style="color:black !important" class="glyphicon pull-left glyphicon-eye-open"></span><br />
             <a class="links" href="http://newsflashon.azurewebsites.net/">Läs Mer...</a>
-            <p><i>@Html.Raw(@sortedEntries[0].sweDate)</i></p>
+
         </div>
         <br />
         <br />
@@ -198,6 +202,8 @@
         <br />
     </div>
 </div>
+
+
 <div class="container-fluid dividers2" style="background-image: linear-gradient(to top,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);">
     <div id="omStebra2" class="container">
 
