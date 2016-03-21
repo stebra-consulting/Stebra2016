@@ -8,7 +8,7 @@
 
 /*Alla Rubriker*/
 .titles {
-text-align:center;
+    text-align: center;
 }
 
 body {
@@ -210,29 +210,48 @@ input {
     background: #000;
 }
 
+.align {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #navImg {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+
 @media screen and (max-width: 1400px) {
 
     #headervideo #headervideoinner {
         width: auto;
     }
-    
 }
 
 @media screen and (max-width: 690px) {
-        .news img {
-           
-            max-width: 100% !important;
-        }
+    .news img {
+        max-width: 100% !important;
+    }
 
+    .align {
+        text-align: left;
+    }
 
-        #headervideo #headervideoinner {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
+    p, b, a, .displaceFix {
+    font-size:16px !important;
+        text-align: left !important;
+    }
+
+    #headervideo #headervideoinner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
         #headervideo #headervideoinner .img {
             display: block;
@@ -247,8 +266,9 @@ input {
 
 
 .news img {
-    border-style:none;
+    border-style: none;
 }
+
 .navbar-collapse {
     border-color: rgba(0, 0, 0, 0) !important;
 }
@@ -261,10 +281,22 @@ hr {
     background-color: #333; /* Modern Browsers */
 }
 
-#nyheter {
-    background-image:url("../Images/texture_seamless_repeat.jpg");
+
+.footer p {
+    text-align: left !important;
+}
+.info {
+padding:10px !important;
+}
+.container-fluid, .container {
+padding:5px !important;
 }
 
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    
+padding:5px !important;
+
+}
 
 /**************************
 ***************************
@@ -284,23 +316,21 @@ hr {
 
 @media screen and (min-width: 750px) {
     .navbar-inverse-transparant {
-        background-image: linear-gradient(to bottom,
-        rgba(60, 60, 60, 0) 0,
-        rgba(34, 34, 34, 0) 100%) !important;
+        background-image: linear-gradient(to bottom, rgba(60, 60, 60, 0) 0, rgba(34, 34, 34, 0) 100%) !important;
         background-color: rgba(34, 34, 34, 0) !important;
         border-color: rgba(0, 0, 0, 0) !important;
     }
-    /*COLOR NAVTEXT, LOGO WHEN DESKTOP*/
-    .navbar-inverse-transparant .navbar-nav > li > a, .logo path {
-        color: #a60400 !important;
-        fill: #a60400 !important; /*.logo path*/
-    }
+        /*COLOR NAVTEXT, LOGO WHEN DESKTOP*/
+        .navbar-inverse-transparant .navbar-nav > li > a, .logo path {
+            color: #a60400 !important;
+            fill: #a60400 !important; /*.logo path*/
+        }
 }
 
-@media screen and (max-width: 750px) { 
+@media screen and (max-width: 750px) {
     .navbar-inverse-transparant {
-    background-color: #a60400 !important;
-    background-image: linear-gradient(to bottom,rgb(255, 0, 0) 0,rgba(0, 0, 0, 0.88) 100%) !important;
+        background-color: #a60400 !important;
+        background-image: linear-gradient(to bottom,rgb(255, 0, 0) 0,rgba(0, 0, 0, 0.88) 100%) !important;
     }
     /*COLOR NAVTEXT, LOGO WHEN MOBILE*/
     .navbar-inverse .navbar-nav > li > a, .logo path {
@@ -311,7 +341,7 @@ hr {
 
 /*IMAGE PLACEHOLDER*/
 .placeholder {
-    background-color:#a60400;
+    background-color: #a60400;
     background-image: linear-gradient(to bottom,rgb(255, 0, 0) 0,rgba(0, 0, 0, 0.88) 100%);
 }
 
@@ -321,14 +351,25 @@ h1, h2, h3, .links, .glyphicon, .btn-default, .btn-default:hover {
 }
 
 /*Input Color placeholder atr*/
-::-webkit-input-placeholder{color: #a60400 !important;}
-:-moz-placeholder{color:#a60400 !important;/* For Firefox 18- */}
-::-moz-placeholder{color:#a60400 !important;/* For Firefox 19+ */}
-:-ms-input-placeholder{color:#a60400 !important;}
+::-webkit-input-placeholder {
+    color: #a60400 !important;
+}
+
+:-moz-placeholder {
+    color: #a60400 !important; /* For Firefox 18- */
+}
+
+::-moz-placeholder {
+    color: #a60400 !important; /* For Firefox 19+ */
+}
+
+:-ms-input-placeholder {
+    color: #a60400 !important;
+}
 
 /*DARK FONT COLOR */
 p, b {
-    color:black !important;
+    color: black !important;
 }
 
 .dividers1, .form-control { /*Bright Sections*/
@@ -340,14 +381,24 @@ p, b {
 }
 
 /*BRIGHT FONT COLOR*/
-.caption, .solid-logo path, footer *  { 
+.caption, .solid-logo path, footer * {
     color: #FFFFFF !important; /*.caption: förstudie bild rubrik*/
     fill: #FFFFFF !important; /*.solid-logo path*/
 }
 
 
-
-
+.social {
+    fill: #a60400 !important; /*.solid-logo path*/
+}
+.nyheter2 {
+    background-image:url("../Images/texture_seamless_repeat.jpg");
+    box-shadow: 15px 15px 19px #4A4A4A;
+}
+#nyheter {
+    background-image: linear-gradient(to top,rgba(34, 34, 34, 0.52) 100%,rgba(34, 34, 34, 0.52) 100%);
+    padding-left:15px !important;
+    padding-right:15px !important;
+}
 /**************************
 ***************************
            Font
@@ -378,6 +429,7 @@ nav.shrink .navbar-brand {
 p, b, a, .displaceFix {
     font-family: "Segoe UI Semilight","Segoe UI","Segoe", Tahoma, Helvetica, Arial, sans-serif !important;
     font-size: 22px;
+    text-align:center;
 }
 
 h1, h2, h3 {
@@ -395,15 +447,13 @@ footer * {
     margin-bottom: 50px;
 }
 
-#nyheter p, 
-#nyheter h1, 
+#nyheter p,
+#nyheter h1,
 #nyheter h2,
-#nyheter h3
-{
-
+#nyheter h3 {
     font-family: "Times New Roman", Times, serif !important;
 }
-.bold {
-font-weight:500;
-}
 
+.bold {
+    font-weight: 500;
+}

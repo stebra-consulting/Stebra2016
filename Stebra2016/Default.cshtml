@@ -95,12 +95,14 @@
 <div class="container-fluid dividers2">
     <div class="container">
         <h1 class="titles">Vad gör vi? </h1>
+        <br />
+        <br />
         <div class="col-lg-6" style="margin-bottom:30px">
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/prestudy.jpg" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
 
             <h2 class="caption text-center">Förstudie</h2>
-            <h2 class="salesTitle">Fluffiga önskemål utan konkreta planer?</h2>
+            <h2 class="salesTitle align">Fluffiga önskemål utan konkreta planer?</h2>
             <p>
                 Vi hjälper er att slå huvudet på spiken och sätta rimliga mål.
                 Med hjälp av workshops och en nära kund-dialog samlar vi in, analyserar,
@@ -113,7 +115,7 @@
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/Project.png" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
             <h2 class="caption text-center">Projekt</h2>
-            <h2 class="salesTitle">Sitter ni i klistret eller har ni fått tuggummi under fötterna?</h2>
+            <h2 class="salesTitle align">Sitter ni i klistret eller har ni fått tuggummi under fötterna?</h2>
             <p>
                 Lugn, vi fixart!
                 Oavsett om ni redan har ett färdigt lösningsförslag till ert IT-projekt,
@@ -127,7 +129,7 @@
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/maintenance.jpg" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
             <h2 class="caption text-center">Förvaltning</h2>
-            <h2 class="salesTitle">Kommer ni på roligare saker att göra än att ta hand om ert IT-system?</h2>
+            <h2 class="salesTitle align">Kommer ni på roligare saker att göra än att ta hand om ert IT-system?</h2>
             <p>
                 Då tycker vi att ni ska fokusera på det istället och låta oss ta hand om tekniken.
                 Ett förvaltningsuppdrag hos oss kan innebära att vi kontinuerligt sköter uppdateringen och vidareutvecklingen av era system.
@@ -138,29 +140,18 @@
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/Presence.png" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
             <h2 class="caption text-center">Social närvaro</h2>
-            <h2 class="salesTitle">Dags att utveckla er sociala kompetens?</h2>
+            <h2 class="salesTitle align">Dags att utveckla er sociala kompetens?</h2>
             <p>
                 Vi hjälper er att förbättra både era interna och externa kommunikationsvägar så att er information hamnar på rätt ställe.
                 Vi kan tillexempel hjälpa er att på ett mer effektivt sätt dela information på era interna plattformar,
                 eller att nå ut till era sociala medier med bara ett klick.
             </p>
         </div>
-        <div class="col-lg-12">
-            <br /><br /><br /><br /><br /><br />
-            <p>
-
-                Vi på Stebra Consulting levererar Moln- och Konsulttjänster inom informationshantering. Enkelt förklarat hjälper vi företag att effektivisera sin verksamhet genom förbättrade flöden inom dokumenthantering, IT-system och verksamhetsprocesser.
-                Det kan till exempel vara att leverera ett system som hanterar kundens interna dokument och öka sökbarheten, eller att skapa en plattform för kundens interna och externa kommunikation innehållande mail, chatfunktion, teamsidor och konferenssystem.
-
-                Teamet bakom Stebra Consulting har över femton års erfarenhet av att göra just detta. Våra kunder är allt från stora globala företag och myndigheter till mindre privatägda företag inom byggindustrin.
-
-                Då vi har bland marknadens bästa kompetenser inom SharePoint-lösningar och kravhantering är vi välrenommerade i branschen.
-                Vi är stolta SharePoint-partners till bland andra HiQ, Tieto och Xperta.
-
-            </p>
-        </div>
-
+        
     </div><br />
+    <div class="align info">
+    <p>Vad gör vi mer?<br />  <a class="links" href="../infosidor/vadgorvimer">Läs Mer...</a></p>
+</div>
 </div>
 
 
@@ -172,22 +163,22 @@
 
 <!-- SENASTE NYTT -->
 <div id="nyheter" class="container-fluid dividers1">
-    <div class="container">
+    <div class="container nyheter2">
         <div class="col-lg-12 titles">
             <br />
             @*<h2 style="color:black !important">Senaste nytt</h2>*@
             <img class="img-responsive" src="~/Images/senasteNytt.png" />
-            <hr />
-            <p>STOCKHOLM, @Html.Raw(@sortedEntries[0].sweDate)x</p>
-            <hr />
+            @*<hr />*@
+            <p>STOCKHOLM, @Html.Raw(@sortedEntries[0].sweDate)</p>
+           @* <hr />*@
         </div>
         <div class="col-lg-6 news">
             <br />
             <img src="@sortedEntries[0].Image" alt="firstImage" />
         </div>
         <div class="col-lg-6">
-            <h1 style="color:black !important">@sortedEntries[0].Title</h1>
-            <hr />
+            <h1 class="align" style="color:black !important">@sortedEntries[0].Title</h1>
+            @*<hr />*@
             <p>
                 @Html.Raw(sortedEntries[0].Body)
             </p>
@@ -247,7 +238,7 @@
             <div class="col-lg-12">
                 <div class="col-lg-6" style="margin-bottom:30px">
                     <div class="text-center"><img src="~/Images/Persons/Hans.jpg" class="img-circle person" /></div>
-                    <div class="text-center">
+                    <div class="align">
                         <h1>Hans</h1>
                         <p>REQB-certified SCRUM master</p>
                         <p class="displaceFix">Hans Steffensson som är en av grundarna till Stebra har ett decenium av erfarenhet inom IT och vet vilka processer och verktyg som bör användas.</p>
@@ -259,35 +250,35 @@
 
                 <div class="col-lg-6" style="margin-bottom:30px">
                     <div class="text-center"><img src="~/Images/Persons/Bertil.jpg" class="img-circle person" /></div>
-                    <div class="text-center">
+                    <div class="align">
                         <h1>Bertil</h1>
                         <p>SharePoint, Office365 specialist</p>
                         <p class="displaceFix">Bertil Brandt som också är en av grundarna på Stebra har jobbat 16 år inom IT. Bertil är också förälskad i det agila arbetssättet, verktygen, metodiken i Scrum. </p>
-                        <p style="font-size:18px">Hans.Steffensson@stebra.se</p>
-                        <p style="font-size:18px">070342342342</p>
+                        <p style="font-size:16px">Bertil.Brandt@stebra.se</p>
+                        <p style="font-size:16px">070342342342</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="col-lg-6" style="margin-bottom:30px">
                     <div class="text-center"><img src="~/Images/Persons/Felix.jpg" class="img-circle person" /></div>
-                    <div class="text-center">
+                    <div class="align">
                         <h1>Felix</h1>
                         <p>Frontend, .NET, SharePoint, Office365 Designer </p>
                         <p class="displaceFix">Felix Freye besitter dubbel kompetens, både som fullfjädrad Industridesigner men också ett gediget utvecklarintresse som tagit honom från IOS utveckling, och appar som "Falling Monk". Nu bygger han SharePoint appar.</p>
-                        <p style="font-size:14px">Hans.Steffensson@stebra.se</p>
-                        <p style="font-size:14px">070342342342</p>
+                        <p style="font-size:16px">Felix.Freye@stebra.se</p>
+                        <p style="font-size:16px">070342342342</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6" style="margin-bottom:30px">
                     <div class="text-center"><img src="~/Images/Persons/Simon.jpg" class="img-circle person" /></div>
-                    <div class="text-center">
+                    <div class="align">
                         <h1>Simon</h1>
                         <p>Frontend, .NET, SharePoint, Office365 Developer </p>
                         <p class="displaceFix">Simon Bergqvist en av de bättre systemutvecklarna du någonsin kommer träffa på, har extremt lätt att ta till sig nya teknologier, och delar gärna med sig av sina erfarenheter. </p>
-                        <p style="font-size:20px">Hans.Steffensson@stebra.se</p>
-                        <p style="font-size:20px">070342342342</p>
+                        <p style="font-size:16px">Simon.Bergqvist@stebra.se</p>
+                        <p style="font-size:16px">070342342342</p>
                     </div>
                 </div>
             </div>
@@ -295,23 +286,23 @@
             <div class="col-lg-12">
                 <div class="col-lg-6" style="margin-bottom:30px">
                     <div class="text-center"><img src="~/Images/Persons/Matilda.jpg" class="img-circle person" /></div>
-                    <div class="text-center">
+                    <div class="align">
                         <h1>Matilda</h1>
                         <p>Agil Coach, SCRUM master  </p>
                         <p class="displaceFix">Matilda Riting har över sju års erfarenhet av ledarskap och personlig coachning. Matilda är nyfiken som person och frågar hellre en gång för mycket än en gång för lite då hon hävdar att ovisshet hämmar kreativitet. </p>
-                        <p style="font-size:12px">Hans.Steffensson@stebra.se</p>
-                        <p style="font-size:12px">070342342342</p>
+                        <p style="font-size:16px">Matilda.Riting@stebra.se</p>
+                        <p style="font-size:16px">070342342342</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="text-center"><img src="~/Images/Persons/Alvaro.jpg" class="img-circle person" /></div>
-                    <div class="text-center">
+                    <div class="align">
                         <h1>Alvaro</h1>
                         <p>System arkitekt, .NET Developer </p>
                         <p class="displaceFix">Alvaro Urbano, Gittarn med en onlinepoker-platform i ryggen, är en väldigt skicklig utvecklare och problemlösare.Han är alltid up-to-date med allt som händer i .NET-världen. </p>
-                        <p>Hans.Steffensson@stebra.se</p>
-                        <p>070342342342</p>
+                        <p style="font-size:16px">Alvaro.Urbano@stebra.se</p>
+                        <p style="font-size:16px">070342342342</p>
                     </div>
                 </div>
             </div>
@@ -414,3 +405,13 @@
     <div class="overlay" onClick="style.pointerEvents='none'"></div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.9054494512975!2d18.046823816071818!3d59.317835781654864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77dd51d988d1%3A0x4b91595450bc055c!2sBr%C3%A4nnkyrkagatan+95%2C+117+26+Stockholm%2C+Sverige!5e0!3m2!1ssv!2sus!4v1453905991953" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
+
+
+<ul style="list-style:none;position:fixed;bottom:5px;right:5px">
+
+    <li class="fb"><a target="_blank" href="https://www.facebook.com/StebraConsulting/"><img class="svg social" height="25" width="25" src="~/Images/SocialMedias/fbicon.svg"/></a></li>
+    @*<li class="tw"><a target="_blank" href="https://twitter.com/StebraConsulting"></a></li>*@
+    <li class="li"><a target="_blank" href="http://www.linkedin.com/company/stebra-consulting-ab"><img class="svg social" height="25" width="25" src="~/Images/SocialMedias/liicon.svg" /></a></li>
+</ul>
+
+ 
