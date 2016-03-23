@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = "~/_Layout.cshtml";
+    Layout = "~/EN/_LayoutEN.cshtml";
     Page.Title = "Stebra Consulting";
     List<StebraEntity> sortedEntries = AzureManager.sort();
     var t = sortedEntries[0].Timestamp;
@@ -19,35 +19,10 @@
 }
 
 
-@*  *@
-@*<div style="position:absolute;top:70px;">
-        <div id="helper" class="glyphicon glyphicon-cog" style="display:none;font-size:50px;"></div>
-        <div id="colorPicker" style="background-color:white;height:500px;width:200px;border-radius:5px;border-color:black;border:solid;display:none">
-            <div style="height: 50px;position: relative;">
-                <div class="chooseDivider" style="font-size:30px;border-radius:5px;border:solid;width:25px;position:absolute;top:0px;left:0px;">1</div>
-                <div class="chooseDivider" style="font-size:30px;border-radius:5px;border:solid;width:25px;position:absolute;top:0px;left:50%;margin-left:-10px;">2</div>
-                <div class="x" style="font-size:30px;border-radius:5px;border:solid;width:25px;position:absolute;top:0px;right:0px;">X</div>
-            </div>
-            <input id="customColor" type="text" name="Custom" value="Hex color">
-            <input id="change" type="button" name="btn" value="Change" />
-            <br />
-            <div class="thisColor" style="background-color:blue">#0014FF</div>
-            <div class="thisColor" style="background-color:white">#FFFFFF</div>
-            <div class="thisColor" style="background-color:green">#009605</div>
-            <div class="thisColor" style="background-color:black">#000000</div>
-            <div class="thisColor" style="background-color:grey">#A59D9D</div>
-            <div class="thisColor" style="background-color:red">#EA0000</div>
-            <div class="thisColor" style="background-color:teal">#72C3B1</div>
-            <div class="thisColor" style="background-color:purple">#FB1AC0</div>
-
-
-        </div>
-    </div>*@
-
 <div id="headervideo" style="min-height: 464px;max-height:400px">
     <div id="headervideoinner" style="opacity: 1;">
-        <div class="img responsive hide-desktop" style="background-image: url('Images/Header/clouds.png');"></div>
-        <video style="background: transparent no-repeat url('Images/Header/clouds.png');background-size:100%; background-position:top center;' ,sizingmethod='scale' );" width="100%" height="400px" autoplay="" muted="" loop="">
+        <div class="img responsive hide-desktop" style="background-image: url('/Images/Header/clouds.png');"></div>
+        <video style="background: transparent no-repeat url('/Images/Header/clouds.png');background-size:100%; background-position:top center;' ,sizingmethod='scale' );" width="100%" height="400px" autoplay="" muted="" loop="">
             <source src="http://stebrastashed.blob.core.windows.net/videos/clouds.mp4" type="video/mp4">
         </video>
     </div>
@@ -57,7 +32,7 @@
     z-index: 0;">
     @*<h2 style="font-size:6em">Stebra</h2>*@
     <br /><br />
-    <h2 style="font-size:5em">Alltid lite bättre</h2>
+    <h2 style="font-size:5em">Always a bit better</h2>
     <br /><br /><br /><br />
 </section>
 
@@ -68,19 +43,19 @@
 
         <div class="container">
             <div class="col-lg-12">
-                <h1 class="titles">Stebra Consulting på 30 sekunder </h1>
+                <h1 class="titles">Stebra Consulting in 30 seconds </h1>
 
                 <p>
-                    Stebra Consulting är ett IT-företag i framkant som hjälper ert företag att bli mer effektivt
-                    genom att utveckla och skapa nya lösningar till er informationshantering.
-                    Med över femton års konsulterfarenhet och med kunder som TV4-gruppen,
-                    Pernod Ricard och Ålands kommuner i ryggen gör Stebras agila arbetssätt att vi
-                    skapar värde åt ert företag redan från ert första möte med oss.
+                    Stebra Consulting is an IT company in the forefront to help your company
+                    become more efficient by developing and creating new solutions for your information management.
+                    With over fifteen years of consulting experience with clients like TV4 Group,
+                    Pernod Ricard and the Åland municipalities makes Stebra's agile practices valuable
+                    so that we create value for your company right from your first meeting with us.
                     <br /><br />
 
                     <!-- glyphicon glyphicon-hand-right -->
                     <span class="glyphicon glyphicon-hand-right">
-                        <a href="#kontakta" class="btn btn-default">Boka in ett möte</a>
+                        <a href="#kontakta" class="btn btn-default">Book a meeting now</a>
                     </span>
                 </p>
 
@@ -94,63 +69,64 @@
 
 <div class="container-fluid dividers2">
     <div class="container">
-        <h1 class="titles">Vad gör vi? </h1>
+        <h1 class="titles">What do we do?</h1>
         <br />
         <br />
         <div class="col-lg-6" style="margin-bottom:30px">
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/prestudy.jpg" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
 
-            <h2 class="caption text-center">Förstudie</h2>
-            <h2 class="salesTitle align">Fluffiga önskemål utan konkreta planer?</h2>
+            <h2 class="caption text-center">Pre-study</h2>
+            <h2 class="salesTitle align">Strange requests and without concrete plans?</h2>
             <p>
-                Vi hjälper er att slå huvudet på spiken och sätta rimliga mål.
-                Med hjälp av workshops och en nära kund-dialog samlar vi in, analyserar,
-                specificerar och prioriterar de krav och förbättringsåtgärder just ert företag
-                behöver för att starta ert projekt med den bästa förutsättningen till framgång.
+                We help you to beat the nail on the head, and set reasonable goals.
+                With the help of workshops and a close customer dialogue we collect, analyze,
+                specify and prioritize the requirements and improvement at your company's
+                needs to start your project with the best conditions for success.
             </p>
         </div>
 
         <div class="col-lg-6" style="margin-bottom:30px">
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/Project.png" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
-            <h2 class="caption text-center">Projekt</h2>
-            <h2 class="salesTitle align">Sitter ni i klistret eller har ni fått tuggummi under fötterna?</h2>
+            <h2 class="caption text-center">Project</h2>
+            <h2 class="salesTitle align">Are you are in trouble or do you have a chewing gum under your foot?</h2>
             <p>
-                Lugn, vi fixart!
-                Oavsett om ni redan har ett färdigt lösningsförslag till ert IT-projekt,
-                behöver extra resurser till ett pågående projekt,
-                eller vill starta upp ett helt nytt projekt från ruta ett så hjälper vi er i mål.
-                Vi tar er från ax till limpa vidare till smörgåsbordet och har alltid ett helhetstänk i fokus.
+                Relax, we fix!
+                Whether you already have a ready solution proposal for your IT projects,
+                need extra resources for an ongoing project, or want to start up a new project from square one,
+                we will help you get to your goal.
+                We take you from seed to loaf on to the smorgasbord and always have a holistic approach in focus.
             </p>
         </div>
 
         <div class="col-lg-6">
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/maintenance.jpg" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
-            <h2 class="caption text-center">Förvaltning</h2>
-            <h2 class="salesTitle align">Kommer ni på roligare saker att göra än att ta hand om ert IT-system?</h2>
+            <h2 class="caption text-center">Management</h2>
+            <h2 class="salesTitle align">Do you know anything more fun than to take care of your IT system?</h2>
             <p>
-                Då tycker vi att ni ska fokusera på det istället och låta oss ta hand om tekniken.
-                Ett förvaltningsuppdrag hos oss kan innebära att vi kontinuerligt sköter uppdateringen och vidareutvecklingen av era system.
+                Then we think you should focus on it instead and let us take care of the technology.
+                A management assignments with us can mean that we continuously manages the updating and further development of your systems.
             </p>
         </div>
 
         <div class="col-lg-6">
             @*<img class="img-circle sellText center-block" src="~/Images/SaljandeTexter/Presence.png" />*@
             <img class="img-circle sellText center-block placeholder" src="~/Images/SaljandeTexter/placeHolder.png" />
-            <h2 class="caption text-center">Social närvaro</h2>
-            <h2 class="salesTitle align">Dags att utveckla er sociala kompetens?</h2>
+            <h2 class="caption text-center">Social presence</h2>
+            <h2 class="salesTitle align">Time to develop your social skills?</h2>
             <p>
-                Vi hjälper er att förbättra både era interna och externa kommunikationsvägar så att er information hamnar på rätt ställe.
-                Vi kan tillexempel hjälpa er att på ett mer effektivt sätt dela information på era interna plattformar,
-                eller att nå ut till era sociala medier med bara ett klick.
+                We help you to improve both your internal and external communication channels so that your information is in the right place.
+                For example, we help you to more effectively share information on your internal platforms,
+                or to reach out to your social media with just one click.
+
             </p>
         </div>
 
     </div><br />
     <div class="align info">
-        <p>Vad gör vi mer?<br />  <a class="links" href="../infosidor/vadgorvimer">Läs Mer...</a></p>
+        <p>What do we do more?<br />  <a class="links" href="../EN/infopages/vadgorvimer">Read more...</a></p>
     </div>
 </div>
 
@@ -160,39 +136,8 @@
 
 
 
-
+<!-- No english news yet -->
 <!-- SENASTE NYTT -->
-<div id="nyheter" class="container-fluid dividers1">
-    <div class="container nyheter2">
-        <div class="col-lg-12 titles">
-            <br />
-            @*<h2 style="color:black !important">Senaste nytt</h2>*@
-            <img class="img-responsive" src="~/Images/senasteNytt.png" />
-            @*<hr />*@
-            <p>STOCKHOLM, @Html.Raw(@sortedEntries[0].sweDate)</p>
-            @* <hr />*@
-        </div>
-        <div class="col-lg-6 news">
-            <br />
-            <img src="@sortedEntries[0].Image" alt="firstImage" />
-        </div>
-        <div class="col-lg-6">
-            <h1 class="align" style="color:black !important">@sortedEntries[0].Title</h1>
-            @*<hr />*@
-            <p>
-                @Html.Raw(sortedEntries[0].Body)
-            </p>
-            <span style="color:black !important" class="glyphicon glyphicon-user pull-left glyphicon-eye-open glyphicon-news"></span>
-            <span style="color:black !important" class="glyphicon pull-left glyphicon-eye-open"></span><br />
-            <a class="links" href="http://newsflashon.azurewebsites.net/">Läs Mer...</a>
-
-        </div>
-        <br />
-        <br />
-        <br /><br />
-        <br />
-    </div>
-</div>
 
 
 <div class="container-fluid dividers2  hideinmobile" style="background-image: linear-gradient(to top,rgba(60, 60, 60, 0.18) 0,rgba(34, 34, 34, 0.52) 100%);">
@@ -200,23 +145,20 @@
 
         <div class="container">
             <div class="col-lg-12 ">
-                <h1 class="titles">Vad är Stebra Consulting?</h1>
-                <h3 class="titles">-Alltid lite bättre</h3>
+                <h1 class="titles">What is Stebra Consulting?</h1>
+                <h3 class="titles">-Always a bit better</h3>
                 <p>
-                    Vi som jobbar på Stebra Consulting brinner för det agila arbetssättet och ser regelbunden utvärdering av
-                    vårt arbete som vårt främsta verktyg till att ständigt förbättra oss och våra processer.
-                    Detta tillsammans med vår nyfikenhet och vår stora passion för kontinuerlig utveckling ger oss
-                    möjligheten att leva och leverera vårt motto, <b>"Alltid lite bättre"</b>.
-                    Tack vare vår raka kommunikation, höga transparens och nära samarbete inom vårt team och med våra kunder levererar vi lösningar av högsta kvalité,
-                    samtidigt som vi har roligt på jobbet.
-                    Som kund hos oss innebär Stebras agila arbetssätt att du har möjlighet att påverka ditt projekts mål och framgång under projektets gång.
-                    Då världen är snabbföränderlig kan efterfrågan ibland förändras från en dag till en annan,
-                    därför anpassar vi projektet efter marknadens efterfrågan och arbetar med den, istället för emot.
+                    We at Stebra Consulting are passionate about agile approaches and ensures regular evaluation of our work as our primary tool for continuously improving ourselves and our processes.
+                    This, together with our curiosity and our passion for continuous development gives us
+                    the ability to live and deliver our motto, <b>"Always a little better" </b>
+                    Thanks to our straight communication, high transparency and close cooperation within our team and with our clients, we deliver solutions of the highest quality,
+                    while we have fun at work.
+                    As a customer with Stebra's agile approach, you will be able to influence your own project goals and success of the project.
+                    As the world is rapidly changing, demands can sometimes change from one day to another, Therefore, we adapt the project to the markets demands and working with it, rather than against.
 
-                    Stebra Consulting värderar:
-                    <b>Samarbete, hög Kompetens, Transparens, Kvalité och Resultat.</b>
-
-                    Hos oss är individuella styrkor som bäst i ett gemensamt lagarbete.
+                    Stebra Consulting Values:
+                    <b>Cooperation, High level of expertise, Transparency, Quality and Results.</b>
+                    With us is the individual strengths best in a joint teamwork.
                 </p>
 
             </div>
@@ -231,7 +173,7 @@
         <section>
             <div class="col-lg-12 titles">
                 <br />
-                <h2>Vilka är vi?</h2>
+                <h2>Who are we?</h2>
             </div>
             <br><br><br>
 
@@ -241,7 +183,7 @@
                     <div class="align">
                         <h1>Hans</h1>
                         <p>REQB-certified SCRUM master</p>
-                        <p class="displaceFix hideinmobile">Hans Steffensson som är en av grundarna till Stebra har ett decenium av erfarenhet inom IT och vet vilka processer och verktyg som bör användas.</p>
+                        <p class="displaceFix hideinmobile">Hans Steffensson which is one of the founders of Stebra has a decade of experience in IT and know what processes and tools should be used.</p>
                         <a href="mailto:Hans.Steffensson@stebra.se" target="_top"><p style="font-size:16px">Hans.Steffensson@stebra.se</p></a>
                         <a href="tel:073-261-4688"><p style="font-size:16px">0732614688</p></a>
                     </div>
@@ -253,7 +195,7 @@
                     <div class="align">
                         <h1>Bertil</h1>
                         <p>SharePoint, Office365 specialist</p>
-                        <p class="displaceFix hideinmobile">Bertil Brandt som också är en av grundarna på Stebra har jobbat 16 år inom IT. Bertil är också förälskad i det agila arbetssättet, verktygen, metodiken i Scrum. </p>
+                        <p class="displaceFix hideinmobile">Bertil Brandt, who is a founder of Stebra has worked 16 years in IT. Bertil is also in love with the agile approach, tools, methodology of Scrum.</p>
                         <a href="mailto:Bertil.Brandt@stebra.se" target="_top"><p style="font-size:16px">Bertil.Brandt@stebra.se</p></a>
                         <a href="tel:073-261-3386"><p style="font-size:16px">0732613386</p></a>
                     </div>
@@ -265,7 +207,7 @@
                     <div class="align">
                         <h1>Felix</h1>
                         <p>Frontend, .NET, SharePoint, Office365 Designer/Developer </p>
-                        <p class="displaceFix hideinmobile">Felix Freye besitter dubbel kompetens, både som fullfjädrad Industridesigner men också ett gediget utvecklarintresse som tagit honom från IOS utveckling, och appar som "Falling Monk". Nu bygger han SharePoint appar.</p>
+                        <p class="displaceFix hideinmobile">Felix Freye possesses double skills, both as a full-fledged industrial designer, but also as a solid developer interest that has taken him from the IOS development, and apps like "Falling Monk". Now he builds SharePoint apps.</p>
                         <a href="mailto:Felix.Freye@stebra.se" target="_top"><p style="font-size:16px">Felix.Freye@stebra.se@stebra.se</p></a>
                         <a href="tel:073-972-5718"><p style="font-size:16px">0739725718</p></a>
                     </div>
@@ -276,7 +218,7 @@
                     <div class="align">
                         <h1>Simon</h1>
                         <p>Frontend, .NET, SharePoint, Office365 Developer </p>
-                        <p class="displaceFix hideinmobile">Simon Bergqvist en av de bättre systemutvecklarna du någonsin kommer träffa på, har extremt lätt att ta till sig nya teknologier, och delar gärna med sig av sina erfarenheter. </p>
+                        <p class="displaceFix hideinmobile">Simon Bergqvist is one of the better developers you will ever encounter, has extremely easy to absorb new technologies, and are happy to share his experiences.</p>
                         <a href="mailto:Simon.Bergqvist@stebra.se" target="_top"><p style="font-size:16px">Simon.Bergqvist@stebra.se</p></a>
                         <a href="tel:070-452-3814"><p style="font-size:16px">0704523814</p></a>
                     </div>
@@ -289,9 +231,9 @@
                     <div class="align">
                         <h1>Matilda</h1>
                         <p>Agil Coach, SCRUM master  </p>
-                        <p class="displaceFix hideinmobile">Matilda Riting har över sju års erfarenhet av ledarskap och personlig coachning. Matilda är nyfiken som person och frågar hellre en gång för mycket än en gång för lite då hon hävdar att ovisshet hämmar kreativitet. </p>
+                        <p class="displaceFix hideinmobile">Matilda riting has over seven years of experience in leadership and personal coaching. Matilda is curious as a person and would rather ask one time too many than one too few when she claims that uncertainty inhibits creativity. </p>
                         <a href="mailto:Matilda.Riting@stebra.se" target="_top"><p style="font-size:16px">Matilda.Riting@stebra.se</p></a>
-                        <a href="tel:070-882-8502"> <p style="font-size:16px">0708828502</p></a>
+                        <a href="tel:070-882-8502"><p style="font-size:16px">0708828502</p></a>
                     </div>
                 </div>
 
@@ -300,7 +242,7 @@
                     <div class="align">
                         <h1>Alvaro</h1>
                         <p>System arkitekt, .NET Developer </p>
-                        <p class="displaceFix hideinmobile">Alvaro Urbano, Gittarn med en onlinepoker-platform i ryggen, är en väldigt skicklig utvecklare och problemlösare.Han är alltid up-to-date med allt som händer i .NET-världen. </p>
+                        <p class="displaceFix hideinmobile">Alvaro Urbano with an online poker platform in the back, is a very skilled developer and problemsolver.He is always up-to-date with everything that is happening in the .NET world. </p>
                         <a href="mailto:Alvaro.Urbano@stebra.se" target="_top"><p style="font-size:16px">Alvaro.Urbano@stebra.se</p></a>
                         <a href="tel:070-912-9484"><p style="font-size:16px">0709129484</p></a>
                     </div>
@@ -315,7 +257,7 @@
     <div class="container">
         <div class="col-lg-12 titles">
             <br />
-            <h2>Ett urval av våra kunder</h2>
+            <h2>Some of our customers</h2>
         </div>
 
         <div class="col-lg-12 text-center">
@@ -348,15 +290,15 @@
 <div class="container-fluid dividers2  hideinmobile">
     <div class="container ">
         <div class="col-lg-12 titles">
-            <h2>Våra appar</h2>
+            <h2>Our apps</h2>
         </div>
         <div class="col-lg-12">
             <div class="col-lg-6" style="margin-bottom:30px">
                 <div class="text-center"><img height="100" width="100" src="~/Images/App_Bilder/Check It In.png" class="" /></div>
                 <div class="text-center">
                     <h2>Check It In</h2>
-                    <p class="displaceFix">Check It In tillåter användare att enkelt hitta och checka in sina filer.</p>
-                    <a class="links" href="../apps/checkitinsv">Läs mer... </a>
+                    <p class="displaceFix">Check It In allows users to easily find and check in their files.</p>
+                    <a class="links" href="../apps/checkitin">Read more... </a>
                 </div>
 
             </div>
@@ -365,7 +307,7 @@
                 <div class="text-center"><img height="100" width="100" src="~/Images/App_Bilder/newsflash_v1.png" class="" /></div>
                 <div class="text-center">
                     <h2>Newsflash</h2>
-                    <p class="displaceFix">Newsflash... Kommer snart!</p>
+                    <p class="displaceFix">Newsflash... Coming soon!</p>
                     @*<a class="links" >Läs mer... </a>*@
                 </div>
             </div>
@@ -374,25 +316,24 @@
 </div>
 <div id="kontakta" class="container-fluid dividers1 map">
     <div class="container bg-grey">
-        <h2 class="titles">Kontakta oss</h2>
+        <h2 class="titles">Contact us</h2>
         <br>
 
         <div class="row">
             <div class="col-lg-6 col-lg-push-3 col-sm-9 col-xs-12 form-group">
-
                 <form action="~/Default.cshtml" href="#kontakta">
                     <span class="glyphicon glyphicon-user pull-left contact-glyphicon"></span>
-                    <input class="form-control" id="name" name="name" placeholder="Namn" type="text" required="">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required="">
 
 
 
                     <span class="glyphicon glyphicon-envelope pull-left contact-glyphicon"></span>
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="">
+                    <input class="form-control" id="email" name="email" placeholder="Mail" type="email" required="">
 
                     <span class="glyphicon glyphicon-comment pull-left contact-glyphicon"></span>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Meddelande / Lämna ditt mobilnummer om du vill bli uppringd" rows="8"></textarea><br>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Message / leave your mobilenumber if you want to have a conversation with Stebra" rows="8"></textarea><br>
 
-                    <button id="submitMyMessage" class="btn btn-default pull-right" type="submit" name="contactForm" value="xx">Skicka till info@Stebra.se</button>
+                    <button id="submitMyMessage" class="btn btn-default pull-right" type="submit" name="contactForm" value="xx">Send to info@Stebra.se</button>
                 </form>
 
             </div>
